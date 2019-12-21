@@ -14,7 +14,7 @@
                         <div class="header_menu">
                             <ul>
                                 <li>
-                                    <a class="call" href="#login" data-fancybox>позвонить</a>
+                                    <a class="call" href="#login" data-fancybox>связаться</a>
                                 </li>
                                 <li>
                                     <a class="book" href="#bookus" data-fancybox>забронировать</a>
