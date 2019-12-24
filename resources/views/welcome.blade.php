@@ -99,9 +99,9 @@
                                 самый <span>современный</span><br class="d-lg-none"> отель в караколе
                             </div>
                             <div class="hotel_descr">
-                                <p>Коттеджный городок “Ski Paradise” расположен в 150 метрах от горнолыжной базы «Каракол» и в 7 км от города Каракол, на высоте 2300 метров над уровнем моря. </p>
-                                <p>Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения. </p>
-                                <p>Строительство коттеджного города «Ski Paradise Karakol» началось в 2017 году и по сей день ведется расширение коттеджного городка для предоставления сервиса на высшем уровне.
+                                <p>Коттеджный городок “Ski Paradise” расположился в 150 метрах от горнолыжной базы «Каракол», на склоне Тянь – Шаня, среди величественных хвойных лесов.</p>
+                                <p>На территории Отеля “Ski Paradise” для полноценного отдыха Вас ожидают коттеджи, которые построены из алтайской сосны и представлены в трех вариантах – «Малика», «Дипломат» и «Амбассадор».</p>
+                                <p>В горнолыжном комплексе Ski Paradise каждый квадратный метр обустроен для Вашего комфортного и незабываемого отдыха.
                                 </p>
                             </div>
                             {{--<div class="button">--}}
@@ -167,8 +167,11 @@
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">малика</p>
                             <div class="cottage_menu_inner-bottom">
-                                <p class="cottage_menu_price"><span>от</span> 52$</p>
-                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link"  href="#bookus">забронировать</a></p>
+                                <div>
+                                    <p class="cottage_menu_price"><span>от</span> 200$</p>
+                                    <p class="cottage_menu_link"><a class="cottage_link"  data-toggle="modal" data-target="#cottage-1" style="cursor: pointer">Подробнее</a></p>
+                                </div>
+                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link"  href="#bookus" data-fancybox>забронировать</a></p>
                             </div>
                         </div>
                     </div>
@@ -177,8 +180,11 @@
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">Дипломат</p>
                             <div class="cottage_menu_inner-bottom">
-                                <p class="cottage_menu_price"><span>от</span> 72$</p>
-                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link"   href="#bookus">забронировать</a></p>
+                                <div>
+                                <p class="cottage_menu_price"><span>от</span> 250$</p>
+                                <p class="cottage_menu_link"><a class="cottage_link"  data-toggle="modal" data-target="#cottage-2" style="cursor: pointer">Подробнее</a></p>
+                                </div>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link" href="#bookus" data-fancybox>забронировать</a></p>
                             </div>
                         </div>
                     </div>
@@ -187,8 +193,13 @@
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">Амбасадор</p>
                             <div class="cottage_menu_inner-bottom">
-                                <p class="cottage_menu_price"><span>от</span> 152$</p>
-                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link" href="#bookus">забронировать</a></p>
+                                <div>
+                                    <p class="cottage_menu_price"><span>от</span> 300$</p>
+                                    <p class="cottage_menu_link"><a class="cottage_link"  data-toggle="modal" data-target="#cottage-3" style="cursor: pointer">Подробнее</a></p>
+                                </div>
+                                <p class="cottage_menu_link d-flex align-items-end">
+                                    <a class="cottage_link" href="#bookus" data-fancybox>забронировать</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -205,30 +216,80 @@
                         <img src="{{ asset('images/Group%2020.svg') }}" alt=" ">
                     </div>
                     <div class="activity_main">
-                        <div class="row ">
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="200">
-                                <img src="{{ asset('images/Group54.png') }}" alt="">
+                        <div class="row justify-content-center">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap" data-aos="fade" data-aos-duration="700" data-aos-delay="200">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advfirst.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity1.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        катание на лыжах,
+                                        сноубордах, пакетах
+                                        балонах и т.д. =)
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="400">
-                                <img src="{{ asset('images/Group55.png') }}" alt="">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="400">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advsec.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity2.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        Ski-Rent – арендовать горнолыжное снаряжение
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="600">
-                                <img src="{{ asset('images/Group56.png') }}" alt="">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="600">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advthi.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity3.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        расслабиться в бане
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="800">
-                                <img src="{{ asset('images/Group57.png') }}" alt="">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="800">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advfour.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity4.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        организовать мероприятие в конференц-зале
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="200">
-                                <img src="{{ asset('images/Group58.png') }}" alt="">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="200">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advfiv.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity5.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        вкусно поесть в ресторане “Ski Paradise Karakol”
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="400">
-                                <img src="{{ asset('images/Group59.png') }}" alt="">
+                            <div class="position-relative col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="400">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advsix.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity6.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        трансфер до кассы горнолыжной базы «Каракол»
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="600">
-                                <img src="{{ asset('images/Group60.png') }}" alt="">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="600">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/advsev.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity7.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        организация туров по индивидуальным маршрутам
+                                    </p>
+                                </div>
                             </div>
-                            <div class="col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="800">
-                                <img src="{{ asset('images/Group61.png') }}" alt="">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="800">
+                                <img class="position-absolute w-100 h-100" src="{{ asset('images/adveig.png') }}" alt="">
+                                <div class="position-absolute" style="left:40%; top:10%;">
+                                    <img style="width:75px; height: 75px;" src="{{ asset('images/activity8.png') }}" alt="">
+                                    <p class="adv_text pt-3" style="max-width: 180px">
+                                        прогулка на снегоходе
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -299,7 +360,7 @@
 
                             </div>
                             <div class="col-6 position_right " data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
-                                <img class="white_ski" src="{{ asset('images/footer_pic.png') }} " alt=" ">
+                                <img class="white_ski bg-secondary" src="{{ asset('images/footer_pic.png') }} " alt=" ">
                                 <img class="km " src="{{ asset('images/430%20%D0%BA%D0%BC.png') }} " alt=" ">
                                 <p class="position_text ">от Бишкека до города Каракол</p>
                             </div>
@@ -312,11 +373,15 @@
                             <div class="offset-0 offset-lg-6 col-12 col-lg-6 contact_inner " data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                                 <div class="contact_title ">свяжитесь с нами</div>
                                 <p class="position_descr">
-                                    тел: +996 550 600 200; +996 508 600 200
+                                    <strong>По вопросам заключения договора и бронирования мест обращаться по адресу:</strong>
                                     <br>
-                                    E-mail: ski.paradise@mail.ru
+                                    <strong>Адрес:</strong> Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу
                                     <br>
-                                    instagram: skiparadise_karakol
+                                    <strong>тел:</strong> +996 550 600 200; +996 508 600 200
+                                    <br>
+                                    <strong>E-mail:</strong> ski.paradise@mail.ru
+                                    <br>
+                                    <strong>instagram:</strong> skiparadise_karakol
                                     </p>
                             </div>
                         </div>

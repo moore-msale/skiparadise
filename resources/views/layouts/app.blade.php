@@ -23,6 +23,9 @@
 <body>
 
 @yield('content')
+@include('modals.cottage-1')
+@include('modals.cottage-2')
+@include('modals.cottage-3')
 <script src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript" src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap-material-datetimepicker.js') }}"></script>
