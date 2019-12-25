@@ -1645,6 +1645,7 @@ body {
 @media (max-width: 560px) {
   .section3 {
     min-height: 650px;
+    height:800px;
   }
 }
 
@@ -2131,7 +2132,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 40px 110px;
+  /*padding: 40px 110px;*/
   margin: 0;
 }
 
@@ -2293,7 +2294,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 40px 110px;
+  /*padding: 40px 110px;*/
 }
 
 .book-us .form-box_item {
@@ -2448,5 +2449,16 @@ input[type="date"]:valid:before {
 
 .book-us {
   display: none;
+}
+.logo
+{
+  width:100px;
+}
+
+@media screen and (max-width: 560px) {
+  .logo
+  {
+    width:60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

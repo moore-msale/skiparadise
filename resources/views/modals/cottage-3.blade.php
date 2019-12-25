@@ -1,7 +1,7 @@
 
 <div class="modal fade" id="cottage-3" tabindex="-1" role="dialog" aria-labelledby="productModal"
      aria-hidden="true">
-    <div class="modal-dialog modal modal-dialog-centered overflow-hidden" role="document">
+    <div class="modal-dialog modal modal-dialog-centered overflow-hidden h-auto" role="document">
         <!--Content-->
         <div class="modal-content position-relative">
             <!--Header-->

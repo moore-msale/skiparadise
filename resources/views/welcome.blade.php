@@ -8,7 +8,7 @@
                     <div class=" col-md-8">
                         <div class="header_logo">
                             {{--<a href="#">ski paradise</a>--}}
-                            <a href="#"><img style="width:100px;" src="{{ asset('images/footer_pic.png') }}" alt=""></a>
+                            <img class="logo" src="{{ asset('images/footer_pic.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-4 d-none d-lg-block">
@@ -31,7 +31,7 @@
                         </button>
                         <nav class="nav">
                             <!-- I don't care about the menu elements here so I will hide them-->
-                            <ul id="menu">
+                            <ul>
                                 <li><a href="#about" class="anchor">О нас</a> </li>
                                 <li><a href="#cottage" class="anchor">коттеджи</a></li>
                                 <li><a href="#position" class="anchor">как добраться<a><li>
@@ -354,7 +354,7 @@
                                     <br> - Маршрутка / Выезд в утренние часы / 5-6 часов / 350 Сом<br> - Место в такси / Выезд в утренние часы, по заполнению транспорта / 5-6 часов / 500-800 Сом<br> - Ночной автобус / 21:00, 22:00 и 23:00 / 5-6 часов
                                     / 350 Сом<br> - Личный автомобиль / следовать по трассе А-365 и А-363 / в г. Каракол ехать по ул. Фучика до шлагбаума / 5-6 часов
                                 </p>
-                                <div class="button position-relative" style="z-index: 9999999">
+                                <div class="button position-relative" style="z-index: 1">
                                     <a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>посмотреть на карте</span></a>
 
                                 </div>
@@ -395,7 +395,9 @@
         <div class="form">
             <div class="form-bg">
                 <div class="form-box">
-                    <h2>свяжитесь с нами</h2>
+                    <div class="px-4 py-4 text-center">
+                        <h2>свяжитесь с нами</h2>
+                    </div>
                     <div class="form-box_item">
                         <div class="name"><input type="text" id="contact-1" placeholder="введите имя" required></div>
                     </div>
@@ -423,33 +425,35 @@
         <div class="form ">
             <div class="form-bg">
                 <div class="form-box">
+                    <div class="py-4 px-4 text-center">
                     <h2>Забронируйте коттедж</h2>
+                    </div>
                     <div class="row form-box_wrap">
                         <div class="col-6 form-box_in">
                             <div class="form-box_item">
-                                <div class="name"><input type="text" id="book_1" placeholder="введите имя" required></div>
+                                <div class="name"><input type="text" id="book_1" placeholder="ваше имя" required></div>
                             </div>
                             <div class="form-box_item">
-                                <div class="phone"><input type="text" id="book_2" placeholder="введите номер телефона" required></div>
+                                <div class="phone"><input type="text" id="book_2" placeholder="номер телефона" required></div>
                             </div>
                             <div class="form-box_item">
-                                <div class="name"><input type="text" id="book_3" placeholder="введите ваш email"></div>
+                                <div class="name"><input type="text" id="book_3" placeholder="ваш email"></div>
                             </div>
 
                         </div>
                         <div class="col-6 form-box_in">
                             <select class="selectpicker" id="book_4">
-                                <option value="{{null}}">Выберите тип коттеджа</option>
+                                <option value="{{null}}">тип коттеджа</option>
                                 <option>«Малика»</option>
                                 <option>«Дипломат»</option>
                                 <option>«Амбассадор»</option>
 
                             </select>
                             <div class="form-box_item">
-                                <div class="name"><input class="date" type="text" id="book_5" placeholder="введите дату заезда"></div>
+                                <div class="name"><input class="date" type="text" id="book_5" placeholder="дата заезда"></div>
                             </div>
                             <div class="form-box_item">
-                                <div class="phone"><input class="date" type="text" id="book_6" placeholder="введите дату выезда"></div>
+                                <div class="phone"><input class="date" type="text" id="book_6" placeholder="дата выезда"></div>
                             </div>
                         </div>
                     </div>
