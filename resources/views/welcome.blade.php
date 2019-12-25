@@ -35,7 +35,7 @@
                                 <li><a href="#about" class="anchor">О нас</a> </li>
                                 <li><a href="#cottage" class="anchor">коттеджи</a></li>
                                 <li><a href="#position" class="anchor">как добраться<a><li>
-                                        <li><a class="call" href="#login" data-fancybox="">позвонить</a></li>
+                                        <li><a class="call" href="#login" data-fancybox="">связаться</a></li>
                                         <li><a class="book" href="#bookus" data-fancybox>забронировать</a></li>
                             </ul>
                         </nav>

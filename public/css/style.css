@@ -1885,7 +1885,7 @@ body {
 
 @media (max-width: 414px) {
   .footer .contact {
-    bottom: -450px;
+    bottom: -550px;
     left:0px;
   }
 }
