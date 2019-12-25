@@ -153,7 +153,7 @@
                         <p class="cottage_title">коттеджи</p>
                     </div>
                     <div class="col-lg-8 col-12">
-                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской сосны и <br> представлены в трех вариантах – «Дипломат», «Амбасадор», <br> «Малика».</p>
+                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской сосны и <br> представлены в трех вариантах – «Дипломат», «амбассадор», <br> «Малика».</p>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage3.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <p class="cottage_menu_title">коттедж</p>
-                            <p class="cottage_menu_name">Амбасадор</p>
+                            <p class="cottage_menu_name">амбассадор</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
                                     <p class="cottage_menu_price"><span>от</span> 300$</p>
@@ -382,7 +382,7 @@
                                     <br>
                                     <strong>E-mail:</strong> ski.paradise@mail.ru
                                     <br>
-                                    <strong>instagram:</strong> skiparadise_karakol
+                                    <strong>instagram:</strong> <a href="https://instagram.com/skiparadise_karakol" style="text-decoration: none; color:black;">skiparadise_karakol</a>
                                     </p>
                             </div>
                         </div>

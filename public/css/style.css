@@ -107,7 +107,13 @@ body {
           justify-content: space-between;
   padding-left: 90px;
 }
-
+@media (max-width: 1024px)
+{
+  .header_menu
+  {
+    display: none;
+  }
+}
 .header_menu ul li {
   font-family: "Kelson Sans RU";
   font-weight: 300;
@@ -1646,7 +1652,7 @@ body {
 @media (max-width: 768px) {
   .section3 {
     min-height: 750px;
-    height:800px;
+    height:850px;
   }
 }
 
@@ -1864,7 +1870,12 @@ body {
     left:0px;
   }
 }
-
+@media (max-width: 768px)
+{
+  .footer .contact {
+    bottom: -600px;
+  }
+}
 @media (max-width: 560px) {
   .footer .contact {
     bottom: -435px;

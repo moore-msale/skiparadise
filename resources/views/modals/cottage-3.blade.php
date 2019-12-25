@@ -12,7 +12,7 @@
                 </button>
                 <div class="px-lg-4 px-0">
                     <span class="cottage_menu_title mr-3">коттедж</span>
-                    <span class="cottage_menu_name">Амбасадор</span>
+                    <span class="cottage_menu_name">Амбассадор</span>
                     <p class="cottage_menu_link mt-3">
                         двухуровневый коттедж предназначен для владения двумя хозяевами. Он разделен на две части и имеет два отдельных входа. Каждая часть состоит из 4 спальных комнат, кухни, холла, гостиной и санузлов на каждом этаже.
                     </p>
