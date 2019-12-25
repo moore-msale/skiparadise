@@ -125,15 +125,15 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="row">
-                                        <div class="col-12 col-lg-4" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                                        <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                             <p class="funny_number"><img src="{{ asset('images/150.svg') }}" alt=""></p>
                                             <p class="funny_descr"> Коттеджный городок “Ski Paradise” расположен в 150 метрах от горнолыжной базы «Каракол».</p>
                                         </div>
-                                        <div class="col-12  col-lg-4" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
+                                        <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
                                             <p class="funny_number"><img src="{{ asset('images/15.svg') }}" alt=""></p>
                                             <p class="funny_descr">“Ski Paradise” – это современный гостиничный комплекс и 15 комфортабельных коттеджей</p>
                                         </div>
-                                        <div class="col-12  col-lg-4" data-aos="fade-left" data-aos-duration="700" data-aos-delay="700">
+                                        <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="700">
                                             <p class="funny_number"><img src="{{ asset('images/20.svg') }}" alt=""></p>
                                             <p class="funny_descr">Свыше 20 км. трасс горнолыжной базы Каракол способны удовлетворить и опытного лыжника, и человека, покоряющего горные склоны впервые.
                                             </p>
@@ -161,8 +161,8 @@
         </div>
         <div class="cottage_menu">
             <div class="container-fluide">
-                <div class="row">
-                    <div class="col-md-4 p-0 grow-wrap">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap">
                         <img class="grow" src="{{ asset('images/cottage1.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <p class="cottage_menu_title">коттедж</p>
@@ -176,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage2.jpg') }}" alt="">
+                    <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage2.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">Дипломат</p>
@@ -189,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage3.jpg') }}" alt="">
+                    <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage3.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">Амбасадор</p>
