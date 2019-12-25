@@ -1,9 +1,9 @@
 
-<div class="modal fade" id="cottage-3" style="overflow-y: hidden" tabindex="-1" role="dialog" aria-labelledby="productModal"
+<div class="modal fade" id="cottage-3" tabindex="-1" role="dialog" aria-labelledby="productModal"
      aria-hidden="true">
-    <div class="modal-dialog modal modal-dialog-centered" role="document">
+    <div class="modal-dialog modal modal-dialog-centered overflow-hidden" role="document">
         <!--Content-->
-        <div class="modal-content position-relative" >
+        <div class="modal-content position-relative">
             <!--Header-->
             <div class="modal-body">
                 <div class="position-absolute w-100 h-100" style="background-image: url({{ asset('images/cottage3.jpg') }}); top:0; left:0; background-size: cover; opacity: 0.2; background-position: center;"></div>
@@ -13,6 +13,9 @@
                 <div class="px-lg-4 px-0">
                     <span class="cottage_menu_title mr-3">коттедж</span>
                     <span class="cottage_menu_name">Амбасадор</span>
+                    <p class="cottage_menu_link mt-3">
+                        двухуровневый коттедж предназначен для владения двумя хозяевами. Он разделен на две части и имеет два отдельных входа. Каждая часть состоит из 4 спальных комнат, кухни, холла, гостиной и санузлов на каждом этаже.
+                    </p>
                     <p class="cottage_menu_title mt-2 text-lowercase">
                         Прайс лист:
                     </p>

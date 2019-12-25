@@ -7,7 +7,8 @@
                 <div class="row">
                     <div class=" col-md-8">
                         <div class="header_logo">
-                            <a href="#">ski paradise</a>
+                            {{--<a href="#">ski paradise</a>--}}
+                            <a href="#"><img style="width:100px;" src="{{ asset('images/footer_pic.png') }}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-4 d-none d-lg-block">
@@ -233,7 +234,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity2.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        Ski-Rent – арендовать горнолыжное снаряжение
+                                        прогулка на снегоходе по снежной территории Ski Paradise
                                     </p>
                                 </div>
                             </div>
@@ -242,7 +243,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity3.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        расслабиться в бане
+                                        получить превосходный отдых, расслабившись в бане
                                     </p>
                                 </div>
                             </div>
@@ -251,7 +252,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity4.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        организовать мероприятие в конференц-зале
+                                        трансфер до кассы горнолыжной базы «Каракол»
                                     </p>
                                 </div>
                             </div>
@@ -260,16 +261,16 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity5.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        вкусно поесть в ресторане “Ski Paradise Karakol”
+                                        организация туров по индивидуальным маршрутам
                                     </p>
                                 </div>
                             </div>
-                            <div class="position-relative col-12 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="400">
+                            <div class="position-relative col-10 col-sm-6 col-lg-3 activity_wrap " data-aos="fade" data-aos-duration="700" data-aos-delay="400">
                                 <img class="position-absolute w-100 h-100" src="{{ asset('images/advsix.png') }}" alt="">
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity6.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        трансфер до кассы горнолыжной базы «Каракол»
+                                        Ski-Rent – арендовать горнолыжное снаряжение
                                     </p>
                                 </div>
                             </div>
@@ -278,7 +279,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity7.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        организация туров по индивидуальным маршрутам
+                                        вкусно поесть в ресторане “Ski Paradise Karakol”
                                     </p>
                                 </div>
                             </div>
@@ -287,7 +288,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity8.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        прогулка на снегоходе
+                                        организовать мероприятие в конференц-зале
                                     </p>
                                 </div>
                             </div>
@@ -360,7 +361,7 @@
 
                             </div>
                             <div class="col-6 position_right " data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
-                                <img class="white_ski bg-secondary" src="{{ asset('images/footer_pic.png') }} " alt=" ">
+                                <img class="white_ski" style="background-color: #f7f7f7;" src="{{ asset('images/footer_pic.png') }} " alt=" ">
                                 <img class="km " src="{{ asset('images/430%20%D0%BA%D0%BC.png') }} " alt=" ">
                                 <p class="position_text ">от Бишкека до города Каракол</p>
                             </div>

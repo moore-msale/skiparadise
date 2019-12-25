@@ -1,7 +1,7 @@
 
-<div class="modal fade" id="cottage-1" style="overflow-y: hidden" tabindex="-1" role="dialog" aria-labelledby="productModal"
+<div class="modal fade" id="cottage-1" tabindex="-1" role="dialog" aria-labelledby="productModal"
      aria-hidden="true">
-    <div class="modal-dialog modal modal-dialog-centered" role="document">
+    <div class="modal-dialog modal modal-dialog-centered overflow-hidden" role="document">
         <!--Content-->
         <div class="modal-content position-relative" >
             <!--Header-->
@@ -13,6 +13,9 @@
                 <div class="px-lg-4 px-0">
                     <span class="cottage_menu_title mr-3">коттедж</span>
                     <span class="cottage_menu_name">Малика</span>
+                    <p class="cottage_menu_link mt-3" >
+                        включает в себя 2 спальные комнаты, гостиную, 1 санузел, кухню.
+                    </p>
                     <p class="cottage_menu_title mt-2 text-lowercase">
                         Прайс лист:
                     </p>
