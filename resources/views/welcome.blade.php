@@ -131,7 +131,7 @@
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
                                             <p class="funny_number"><img src="{{ asset('images/15.svg') }}" alt=""></p>
-                                            <p class="funny_descr">“Ski Paradise” – это современный гостиничный комплекс и 15 комфортабельных коттеджей</p>
+                                            <p class="funny_descr">“Ski Paradise” – это современный коттеджный городок.</p>
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="700">
                                             <p class="funny_number"><img src="{{ asset('images/20.svg') }}" alt=""></p>
@@ -153,7 +153,7 @@
                         <p class="cottage_title">коттеджи</p>
                     </div>
                     <div class="col-lg-8 col-12">
-                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской сосны и <br> представлены в трех вариантах – «Дипломат», «амбассадор», <br> «Малика».</p>
+                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской сосны и <br> представлены в трех вариантах – «Дипломат», «Амбассадор», <br> «Малика».</p>
                     </div>
                 </div>
             </div>
@@ -165,41 +165,41 @@
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap">
                         <img class="grow" src="{{ asset('images/cottage1.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
+                            <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-1"></div>
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">малика</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
                                     <p class="cottage_menu_price"><span>от</span> 200$</p>
-                                    <p class="cottage_menu_link"><a class="cottage_link"  data-toggle="modal" data-target="#cottage-1" style="cursor: pointer">Подробнее</a></p>
                                 </div>
-                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link"  href="#bookus" data-fancybox>забронировать</a></p>
+                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;"  href="#bookus" data-fancybox>забронировать</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage2.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
+                            <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-2"></div>
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">Дипломат</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
                                 <p class="cottage_menu_price"><span>от</span> 250$</p>
-                                <p class="cottage_menu_link"><a class="cottage_link"  data-toggle="modal" data-target="#cottage-2" style="cursor: pointer">Подробнее</a></p>
                                 </div>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link" href="#bookus" data-fancybox>забронировать</a></p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index: 10;" href="#bookus" data-fancybox>забронировать</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage3.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
+                            <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-3"></div>
                             <p class="cottage_menu_title">коттедж</p>
                             <p class="cottage_menu_name">амбассадор</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
                                     <p class="cottage_menu_price"><span>от</span> 300$</p>
-                                    <p class="cottage_menu_link"><a class="cottage_link"  data-toggle="modal" data-target="#cottage-3" style="cursor: pointer">Подробнее</a></p>
                                 </div>
                                 <p class="cottage_menu_link d-flex align-items-end">
-                                    <a class="cottage_link" href="#bookus" data-fancybox>забронировать</a>
+                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>забронировать</a>
                                 </p>
                             </div>
                         </div>
@@ -224,8 +224,7 @@
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity1.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
                                         катание на лыжах,
-                                        сноубордах, пакетах
-                                        балонах и т.д. =)
+                                        сноубордах и т.д. =)
                                     </p>
                                 </div>
                             </div>
@@ -252,7 +251,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity4.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        трансфер до кассы горнолыжной базы «Каракол»
+                                        трансфер до кассы ski-pass горнолыжной базы "Каракол"
                                     </p>
                                 </div>
                             </div>
@@ -306,6 +305,7 @@
                         <div class="easy_title ">С нами удобно</div>
                         <div class="easy_descr ">
                             <p class="easy_descr_text ">В коттеджном городке «Ski Paradise Karakol» Вас ждет теплый прием персонала и приятный отдых!</p>
+                            <p>В стоимость проживания входят:</p>
                             <p>- Завтрак, ассортиментный перечень блюд для обслуживания Гостей по системе «Шведский стол»;
                             </p>
                             <p>- Трансфер от коттеджного городка “Ski Paradise Karakol” до кассы ski-pass горнолыжной базы «Каракол»;</p>
@@ -380,9 +380,15 @@
                                     <br>
                                     <strong>тел:</strong> +996 550 600 200; +996 508 600 200
                                     <br>
-                                    <strong>E-mail:</strong> ski.paradise@mail.ru
+                                    <strong>WhatsApp</strong><a href="https://api.whatsapp.com/send?phone=996508600200" style="text-decoration: none; color:black;">+996 508 600 200</a>
+                                    <br>
+                                    {{--<strong>Telegram</strong><a href="https://t.me/phone=996508600200">+996 508 600 200</a>--}}
+                                    {{--<br>--}}
+                                    <strong>E-mail:</strong><a href="mailto:ski.paradise@mail.ru" style="text-decoration: none; color:black;"> ski.paradise@mail.ru</a>
                                     <br>
                                     <strong>instagram:</strong> <a href="https://instagram.com/skiparadise_karakol" style="text-decoration: none; color:black;">skiparadise_karakol</a>
+                                    <br>
+                                    <strong>facebook: </strong><a href="https://www.facebook.com/Ski-Paradise-600171447070417/" style="text-decoration: none; color:black;">Ski Paradise</a>
                                     </p>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
      aria-hidden="true">
     <div class="modal-dialog modal modal-dialog-centered overflow-hidden h-auto" role="document">
         <!--Content-->
-        <div class="modal-content position-relative" >
+        <div class="modal-content position-relative border-0" style="border-radius:0;">
             <!--Header-->
             <div class="modal-body">
                 <div class="position-absolute w-100 h-100" style="background-image: url({{ asset('images/cottage1.jpg') }}); top:0; left:0; background-size: cover; opacity: 0.2; background-position: center;"></div>
