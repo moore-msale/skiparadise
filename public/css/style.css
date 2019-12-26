@@ -1775,7 +1775,7 @@ body {
 .footer .position_descr {
   font-family: "Kelson Sans RU";
   font-weight: 300;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 28px;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -1796,7 +1796,31 @@ body {
     margin-bottom: 20px;
   }
 }
+.footer .position_descr1 {
+  font-family: "Kelson Sans RU";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 30px;
+  color: black;
+  color: rgba(0, 0, 0, 0.7);
+}
 
+@media (max-width: 768px) {
+  .footer .position_descr1 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .footer .position_descr1 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
 .footer .position_text {
   font-family: "Kelson Sans RU";
   font-weight: 300;
@@ -2479,5 +2503,38 @@ input[type="date"]:valid:before {
   {
     width:60px;
   }
+}
+
+.social
+{
+    background-color: #eeeeee;
+    border:5px solid #e6e6e6;
+    transition: 0.5s;
+}
+.whats-icon
+{
+    animation: 3s icon forwards ease-in-out infinite;
+}
+.social:hover
+{
+  transform: scale(1.1);
+}
+
+@keyframes icon {
+    0% {
+      transform: translate(0px, 0px) rotateZ(0deg);
+    }
+    25% {
+      transform: translate(5px, 5px) rotateZ(15deg);
+    }
+    50% {
+      transform: translate(0px, 0px) rotateZ(0deg);
+    }
+    75% {
+      transform: translate(-5px, -5px) rotateZ(-15deg);
+    }
+    100% {
+      transform: translate(0px, 0px) rotateZ(0deg);
+    }
 }
 /*# sourceMappingURL=style.css.map */

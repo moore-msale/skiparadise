@@ -2,6 +2,7 @@
 @section('content')
 
     <div class="skiparadise">
+
         <header class="header">
             <div class="container">
                 <div class="row">
@@ -79,8 +80,8 @@
                         <div class="facts_content">
                             <div class="row">
                                 <div class="col-6 facts_second" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
-                                    <div class="facts_number">15</div>
-                                    <div class="facts_descr">комфортабельных коттеджей</div>
+                                    <div class="facts_number">33</div>
+                                    <div class="facts_descr">комфортабельных коттеджа</div>
                                 </div>
                             </div>
                         </div>
@@ -130,8 +131,8 @@
                                             <p class="funny_descr"> Коттеджный городок “Ski Paradise” расположен в 150 метрах от горнолыжной базы «Каракол».</p>
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
-                                            <p class="funny_number"><img src="{{ asset('images/15.svg') }}" alt=""></p>
-                                            <p class="funny_descr">“Ski Paradise” – это современный коттеджный городок.</p>
+                                            <p class="funny_number"><img src="{{ asset('images/33.svg') }}" alt=""></p>
+                                            <p class="funny_descr">“Ski Paradise” – это современный гостиничный комплекс и 33 комфортабельных коттеджа</p>
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="700">
                                             <p class="funny_number"><img src="{{ asset('images/20.svg') }}" alt=""></p>
@@ -373,7 +374,7 @@
                         <div class="row">
                             <div class="offset-0 offset-lg-6 col-12 col-lg-6 contact_inner " data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                                 <div class="contact_title ">свяжитесь с нами</div>
-                                <p class="position_descr">
+                                <p class="position_descr1">
                                     <strong>По вопросам заключения договора и бронирования мест обращаться по адресу:</strong>
                                     <br>
                                     <strong>Адрес:</strong> Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу
@@ -396,6 +397,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     <div class="contact-us" id="login">
         <div class="form">

@@ -22,8 +22,15 @@
 </head>
 
 <body>
-
+<div class="main position-relative">
 @yield('content')
+    <a href="https://api.whatsapp.com/send?phone=996508600200">
+    <div class="social d-flex align-items-center justify-content-center" style="position:fixed; bottom: 5%; right:2%; width:70px; height:70px; z-index:500; border-radius: 50%;">
+        <i class="fab fa-whatsapp fa-2x whats-icon" style="color:#888888;"></i>
+    </div>
+    </a>
+</div>
+
 @include('modals.cottage-1')
 @include('modals.cottage-2')
 @include('modals.cottage-3')
