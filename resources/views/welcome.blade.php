@@ -374,14 +374,11 @@
                         <div class="row">
                             <div class="offset-0 offset-lg-6 col-12 col-lg-6 contact_inner " data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                                 <div class="contact_title ">свяжитесь с нами</div>
-                                <p class="position_descr1">
+                                <p class="position_descr">
                                     <strong>По вопросам заключения договора и бронирования мест обращаться по адресу:</strong>
                                     <br>
                                     <strong>Адрес:</strong> Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу
-                                    <br>
-                                    <strong>тел:</strong> +996 550 600 200; +996 508 600 200
-                                    <br>
-                                    <strong>WhatsApp</strong><a href="https://api.whatsapp.com/send?phone=996508600200" style="text-decoration: none; color:black;">+996 508 600 200</a>
+
                                     <br>
                                     {{--<strong>Telegram</strong><a href="https://t.me/phone=996508600200">+996 508 600 200</a>--}}
                                     {{--<br>--}}
@@ -390,7 +387,13 @@
                                     <strong>instagram:</strong> <a href="https://instagram.com/skiparadise_karakol" style="text-decoration: none; color:black;">skiparadise_karakol</a>
                                     <br>
                                     <strong>facebook: </strong><a href="https://www.facebook.com/Ski-Paradise-600171447070417/" style="text-decoration: none; color:black;">Ski Paradise</a>
-                                    </p>
+                                    <br>
+                                    <div class="p-3" style="border:1px solid #000000;">
+                                    <span class="position_descr1 mb-0"><strong>тел:</strong> +996 550 600 200; +996 508 600 200</span>
+                                    <br>
+                                    <span class="position_descr1 mb-0"><strong>WhatsApp: </strong><a href="https://api.whatsapp.com/send?phone=996508600200" style="text-decoration: none; color:black;">+996 508 600 200</a></span>
+                                </div>
+                                </p>
                             </div>
                         </div>
                     </div>
