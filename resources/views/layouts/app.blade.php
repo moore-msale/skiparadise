@@ -24,23 +24,6 @@
 <body>
 
 
-<script>
-    function openNav() {
-        document.getElementById("mySidenav").style.right = "0px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.right = "-300px";
-    }
-//	document.getElementById('chatter').scrollTop = "bottom";
-// 	window.addEventListener('mouseup',function(event){
-// 		var pol = document.getElementById('mySidenav');
-// 		if(event.target != pol && event.target.parentNode != pol){
-// 			closeNav();
-// 		}
-// 	});  
-
-</script>
     
 <div class="main position-relative">
 @yield('content')
@@ -49,6 +32,46 @@
     <i class="fab fa-whatsapp fa-2x" style="color:#888888;"></i>
 </div> -->
     </a>
+    <span onclick="openNav()" id="popup__toggle2"><div class="circlephone2" style="transform-origin: center;"></div><div class="circle-fill2" style="transform-origin: center;"></div><div class="img-circle2" style="transform-origin: center;"><div class="img-circleblock2" style="transform-origin: center;"></div></div></span>
+    <div id="mySidenav" class="sidenav d-md-block">
+        <div class="mo-one">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="sf-medium pl-5 item-min-b text-ce-mo" href=""><img src="http://moore2.ru/images/logo4.png" style="width: 100%;" alt="ski paradise"></a>
+            <div style="position:relative;">
+                <div class="col-sm-3 col-sm-offset-4 frame" id="chatter">
+                    <div>
+                        <div class="msj-rta macro" style="margin:auto; position: absolute; bottom: 37px; width: 100%">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="sf-medium pl-5 item-min-b color-mo" style="color:#fff;    margin-top: 7%;
+    margin-bottom: 10%;">Вы можете оставить заявку или почитать подробнее о нас, также можете напрямую проконсультироваться позвонив нам по номерам ниже</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-zap so-mo" href="#bookus">
+                <img src="https://emmar-clinic.com/wp-content/uploads/2019/10/Group.png" style="    padding-right: 4%;
+    position: relative;
+    top: 3px;" alt="ski paradise">Забронировать</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-when so-mo" href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/3-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Как добраться?</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-zvon so-mo" href="tel:+996550600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/4-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Позвонить</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-wha so-mo" href="https://api.whatsapp.com/send?phone=996508600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/2-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Написать в Whatsapp</a>
+        </div>
+        <div class="mo-two">
+            <!--          <a class="sf-medium pl-5 item-min-b men-mo mo-usl so-mo" href="#services">Посмотреть наши услуги</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-rabo so-mo" href="#our-job">Посмотреть наши работы</a> -->
+            <a class="sf-medium item-min-b men-mo" style="text-align: center;padding: 24px 0px 0px 0px!important;font-weight: 900;color: #fff;">Адрес</a>
+            <a class="sf-medium item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/0.png" style="padding-right: 2%;" alt="Стоматология Emmar">Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу</a>
+            <!--                 <a class="sf-medium pl-5 item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/1-2.png" style="padding-right: 2%;" alt="Стоматология Emmar">Пн- сб 8.00 - 20.00</a> -->
+            <div class="soc-mo">
+                <a class="sf-medium item-min-b men-mo" style="padding: 4%;align-items: center;background: #598ec5;
+text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="https://www.instagram.com/skiparadise_karakol/">INSTAGRAM</a>
+                <a class="sf-medium item-min-b men-mo" style="padding: 4%;align-items: center;background: #7e8593;
+text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="https://www.facebook.com/Ski-Paradise-600171447070417/">FACEBOOK</a>
+                <!-- 			<a class="sf-medium pl-5 item-min-b men-mo" style="padding: 4%;align-items: center;background: #137d8c;
+                text-align: center;width: 50%;color: #ffffff;font-size: 15px;" href="">FACEBOOK</a> -->
+            </div>
+        </div>
+    </div>
 </div>
 
 @include('modals.cottage-1')
@@ -63,6 +86,24 @@
 <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 <script src="{{ asset('js/aos.js') }}"></script>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.right = "0px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.right = "-300px";
+    }
+    //	document.getElementById('chatter').scrollTop = "bottom";
+    // 	window.addEventListener('mouseup',function(event){
+    // 		var pol = document.getElementById('mySidenav');
+    // 		if(event.target != pol && event.target.parentNode != pol){
+    // 			closeNav();
+    // 		}
+    // 	});
+
+</script>
 <script>
     $(document).ready(function() {
         $('.date').bootstrapMaterialDatePicker
@@ -237,46 +278,7 @@
     {{--});--}}
 {{--</script>--}}
 
-<span onclick="openNav()" id="popup__toggle2"><div class="circlephone2" style="transform-origin: center;"></div><div class="circle-fill2" style="transform-origin: center;"></div><div class="img-circle2" style="transform-origin: center;"><div class="img-circleblock2" style="transform-origin: center;"></div></div></span>
-<div id="mySidenav" class="sidenav d-md-block d-none">
-	<div class="mo-one">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	<a class="sf-medium pl-5 item-min-b text-ce-mo" href=""><img src="http://moore2.ru/images/logo4.png" style="width: 100%;" alt="ski paradise"></a>
-		<div style="position:relative;">
-<div class="col-sm-3 col-sm-offset-4 frame" id="chatter">
-        <div>
-            <div class="msj-rta macro" style="margin:auto; position: absolute; bottom: 37px; width: 100%">
 
-            </div>
-        </div>
-    </div>
-		</div>
-	<a class="sf-medium pl-5 item-min-b color-mo" style="color:#fff;    margin-top: 7%;
-    margin-bottom: 10%;">Вы можете оставить заявку или почитать подробнее о нас, также можете напрямую проконсультироваться позвонив нам по номерам ниже</a>
-	<a class="sf-medium pl-5 item-min-b men-mo mo-zap so-mo" href="#bookus">
-	    <img src="https://emmar-clinic.com/wp-content/uploads/2019/10/Group.png" style="    padding-right: 4%;
-    position: relative;
-    top: 3px;" alt="ski paradise">Забронировать</a>
-    <a class="sf-medium pl-5 item-min-b men-mo mo-when so-mo" href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/3-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Как добраться?</a>
-    <a class="sf-medium pl-5 item-min-b men-mo mo-zvon so-mo" href="tel:+996550600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/4-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Позвонить</a>
-    <a class="sf-medium pl-5 item-min-b men-mo mo-wha so-mo" href="https://api.whatsapp.com/send?phone=996508600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/2-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Написать в Whatsapp</a>
-	</div>
-	<div class="mo-two">
-<!--          <a class="sf-medium pl-5 item-min-b men-mo mo-usl so-mo" href="#services">Посмотреть наши услуги</a>
-<a class="sf-medium pl-5 item-min-b men-mo mo-rabo so-mo" href="#our-job">Посмотреть наши работы</a> -->
-		<a class="sf-medium item-min-b men-mo" style="text-align: center;padding: 24px 0px 0px 0px!important;font-weight: 900;color: #fff;">Адрес</a>
-		<a class="sf-medium item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/0.png" style="padding-right: 2%;" alt="Стоматология Emmar">Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу</a>
-<!--                 <a class="sf-medium pl-5 item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/1-2.png" style="padding-right: 2%;" alt="Стоматология Emmar">Пн- сб 8.00 - 20.00</a> -->
-		<div class="soc-mo">
-			<a class="sf-medium item-min-b men-mo" style="padding: 4%;align-items: center;background: #598ec5;
-text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="https://www.instagram.com/skiparadise_karakol/">INSTAGRAM</a>
-			<a class="sf-medium item-min-b men-mo" style="padding: 4%;align-items: center;background: #7e8593;
-text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="https://www.facebook.com/Ski-Paradise-600171447070417/">FACEBOOK</a>
-<!-- 			<a class="sf-medium pl-5 item-min-b men-mo" style="padding: 4%;align-items: center;background: #137d8c;
-text-align: center;width: 50%;color: #ffffff;font-size: 15px;" href="">FACEBOOK</a> -->
-		</div>
-	</div>
-</div>
 
 
 </body>
