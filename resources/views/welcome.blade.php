@@ -132,7 +132,7 @@
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
                                             <p class="funny_number"><img src="{{ asset('images/33.svg') }}" alt=""></p>
-                                            <p class="funny_descr">“Ski Paradise” – это современный гостиничный комплекс и 33 комфортабельных коттеджа</p>
+                                            <p class="funny_descr">"SKI Paradise Karakol" - это современный коттеджный городок</p>
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="700">
                                             <p class="funny_number"><img src="{{ asset('images/20.svg') }}" alt=""></p>
