@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ski paradise</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
 </head>
 
 <body>
@@ -48,7 +47,7 @@
             </div>
             <a class="sf-medium pl-5 item-min-b color-mo" style="color:#fff;    margin-top: 7%;
     margin-bottom: 10%;">Вы можете оставить заявку или почитать подробнее о нас, также можете напрямую проконсультироваться позвонив нам по номерам ниже</a>
-            <a class="sf-medium pl-5 item-min-b men-mo mo-zap so-mo" href="#bookus">
+            <a class="sf-medium pl-5 item-min-b men-mo mo-zap so-mo bron" href="#bookus" data-fancybox>
                 <img src="https://emmar-clinic.com/wp-content/uploads/2019/10/Group.png" style="    padding-right: 4%;
     position: relative;
     top: 3px;" alt="ski paradise">Забронировать</a>
@@ -59,7 +58,7 @@
         <div class="mo-two">
             <!--          <a class="sf-medium pl-5 item-min-b men-mo mo-usl so-mo" href="#services">Посмотреть наши услуги</a>
             <a class="sf-medium pl-5 item-min-b men-mo mo-rabo so-mo" href="#our-job">Посмотреть наши работы</a> -->
-            <a class="sf-medium item-min-b men-mo" style="text-align: center;padding: 24px 0px 0px 0px!important;font-weight: 900;color: #fff;">Адрес</a>
+            <a class="sf-medium item-min-b men-mo" style="text-align: center;padding: 0px 0px 0px 0px!important;font-weight: 900;color: #fff;">Адрес</a>
             <a class="sf-medium item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/0.png" style="padding-right: 2%;" alt="Стоматология Emmar">Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу</a>
             <!--                 <a class="sf-medium pl-5 item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/1-2.png" style="padding-right: 2%;" alt="Стоматология Emmar">Пн- сб 8.00 - 20.00</a> -->
             <div class="soc-mo">
@@ -103,6 +102,11 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
     // 		}
     // 	});
 
+</script>
+<script>
+    $('.bron').on('click', function () {
+        document.getElementById("mySidenav").style.right = "-300px";
+    })
 </script>
 <script>
     $(document).ready(function() {

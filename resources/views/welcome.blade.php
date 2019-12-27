@@ -389,7 +389,8 @@
                                     <strong>facebook: </strong><a href="https://www.facebook.com/Ski-Paradise-600171447070417/" style="text-decoration: none; color:black;">Ski Paradise</a>
                                     <br>
                                     <div class="p-3" style="border:1px solid #000000;">
-                                    <span class="position_descr1 mb-0"><strong>тел:</strong> +996 550 600 200; +996 508 600 200</span>
+                                    <span class="position_descr1 mb-0"><strong>тел:</strong><a href="tel: +996 550 600 200" style="text-decoration: none; color:black;"> +996 550 600 200</a>;<a
+                                                href="tel: +996 508 600 200" style="text-decoration: none; color:black;"> +996 508 600 200</a></span>
                                     <br>
                                     <span class="position_descr1 mb-0"><strong>WhatsApp: </strong><a href="https://api.whatsapp.com/send?phone=996508600200" style="text-decoration: none; color:black;">+996 508 600 200</a></span>
                                 </div>
