@@ -13,7 +13,7 @@ class MessageController extends Controller
 
     public function book(Request $request)
     {
-        Mail::to('mackinkenny@gmail.com')->send(new Book_message($request->all()));
+        Mail::to('ski.paradise@mail.ru')->send(new Book_message($request->all()));
         if ($request->ajax()){
             return response()->json([
                 'status' => "success",
@@ -23,7 +23,7 @@ class MessageController extends Controller
 
     public function contact(Request $request)
     {
-        Mail::to('mackinkenny@gmail.com')->send(new Contact_message($request->all()));
+        Mail::to('ski.paradise@mail.ru')->send(new Contact_message($request->all()));
         if ($request->ajax()){
             return response()->json([
                 'status' => "success",
