@@ -90,6 +90,7 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 <script src="{{ asset('js/aos.js') }}"></script>
+
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {

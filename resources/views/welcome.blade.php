@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+@dd(\Illuminate\Support\Facades\Session::get($check));
     <div class="skiparadise">
 
         <header class="header">

@@ -10,10 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Controller@index')->name('/');
 
 Route::post('book_send','MessageController@book')->name('book_send');
 Route::post('contact_send','MessageController@contact')->name('contact_send');
