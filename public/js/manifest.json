@@ -3,7 +3,7 @@
     "name": "Тестер",
     "icons": [
     {
-        "src":"/images/footer-pic.png",
+        "src":"/images/footer_pic.png",
         "sizes": "512x512",
         "type": "image/png"
     }
