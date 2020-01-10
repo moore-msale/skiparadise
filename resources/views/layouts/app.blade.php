@@ -86,10 +86,11 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 <script src="{{ asset('js/aos.js') }}"></script>
+<script src="{{ asset('js/service-worker.js') }}"></script>
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/js/service-worker.js').then(function(registration) {
+            navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function(err) {
