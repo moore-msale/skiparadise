@@ -35,7 +35,7 @@
     <div id="mySidenav" class="sidenav d-md-block">
         <div class="mo-one">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="sf-medium pl-5 item-min-b text-ce-mo" href=""><img src="http://moore2.ru/images/logo4.png" style="width: 100%;" alt="ski paradise"></a>
+            <a class="sf-medium pl-5 item-min-b text-ce-mo" href=""><img src="{{asset('images/footer_pic.png')}}" style="width: 100%;" alt="ski paradise"></a>
             <div style="position:relative;">
                 <div class="col-sm-3 col-sm-offset-4 frame" id="chatter">
                     <div>
@@ -85,7 +85,23 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 <script src="{{ asset('js/aos.js') }}"></script>
-
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('js/service-worker.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            }).catch(function(err) {
+                console.log(err)
+            });
+        });
+    } else {
+        console.log('service worker is not supported');
+    }
+</script>
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.right = "0px";
