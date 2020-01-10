@@ -27,6 +27,10 @@
     
 <div class="main position-relative">
 @yield('content')
+
+    <div class="position-fixed text-center pt-5 ios_taper d-none" style="bottom:0%; left:0%; width:100%; height:200px;">
+        dsfsfdsfsfsfdfsdfds
+    </div>
     <a href="https://api.whatsapp.com/send?phone=996508600200">
 <!--     <div class="social d-flex align-items-center justify-content-center" >
     <i class="fab fa-whatsapp fa-2x" style="color:#888888;"></i>
@@ -115,7 +119,7 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 
     // Если приложение открыто на iOS и в браузере, то предлагаем установить
     if (isIos() && !isInStandaloneMode()) {
-        this.setState({ isShown: true }); // На примере React
+        $('.ios_taper').removeClass('d-none');
     }
 </script>
 <script>
