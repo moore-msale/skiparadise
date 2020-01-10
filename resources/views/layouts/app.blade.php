@@ -18,6 +18,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Ski paradise</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="manifest" href="{{ asset('js/manifest.json') }}">
 </head>
 
 <body>
@@ -88,7 +89,7 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('js/service-worker.js').then(function(registration) {
+            navigator.serviceWorker.register('/js/service-worker.js').then(function(registration) {
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function(err) {
