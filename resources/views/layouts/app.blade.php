@@ -89,7 +89,7 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/js/service-worker.js').then(function(registration) {
+            navigator.serviceWorker.register('').then(function(registration) {
                 // Registration was successful
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function(err) {
