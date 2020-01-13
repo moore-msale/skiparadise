@@ -27,10 +27,6 @@
     
 <div class="main position-relative">
 @yield('content')
-
-    <div class="position-fixed text-center pt-5 ios_taper d-none" style="bottom:0%; left:0%; width:100%; height:200px;">
-        dsfsfdsfsfsfdfsdfds
-    </div>
     <a href="https://api.whatsapp.com/send?phone=996508600200">
 <!--     <div class="social d-flex align-items-center justify-content-center" >
     <i class="fab fa-whatsapp fa-2x" style="color:#888888;"></i>
@@ -91,38 +87,6 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 <script src="{{ asset('js/aos.js') }}"></script>
 
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-                // Registration was successful
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
-                // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
-            }).catch(function(err) {
-                console.log(err)
-            });
-        });
-    } else {
-        console.log('service worker is not supported');
-    }
-</script>
-<script>
-    const isIos = () => {
-        const userAgent = window.navigator.userAgent.toLowerCase();
-        return /iphone|ipad|ipod/.test( userAgent );
-    };
-    // Проверяем, открыто ли приложение отдельно или в браузере
-    const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
-
-
-
-    // Если приложение открыто на iOS и в браузере, то предлагаем установить
-    if (isIos() && !isInStandaloneMode()) {
-        $('.ios_taper').removeClass('d-none');
-    }
-</script>
 <script>
     function openNav() {
         document.getElementById("mySidenav").style.right = "0px";
