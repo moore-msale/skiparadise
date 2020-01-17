@@ -8,7 +8,7 @@
                     <div class=" col-md-8">
                         <div class="header_logo">
                             {{--<a href="#">ski paradise</a>--}}
-                            <img class="logo" src="{{ asset('images/footer_pic.png') }}" alt="">
+                            <img class="logo d-lg-block d-none" src="{{ asset('images/footer_pic.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-4 d-none d-lg-block">
@@ -47,18 +47,26 @@
             </div>
         </header>
         <div class="banner">
-            <img class="banner_img" src="{{ asset('images/malte-schmidt-5oh_gv07cBY-unsplash%201.jpg') }}" alt="">
+            <img class="banner_img d-lg-block d-none" src="{{ asset('images/mainbg.png') }}" alt="">
+            <img class="banner_img d-lg-none d-block" src="{{ asset('images/mobilebg.png') }}" alt="">
             <div class="banner_content">
                 <div class="container">
                     <div class="banner_content-inner">
-                        <div class="banner_content-inner_line">
-                            <div class="banner_geo" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                        <div class="banner_content-inner_line text-sm-center">
+                            <img class="w-25 d-lg-none d-block mx-auto pb-4" src="{{ asset('images/footer_pic.png') }}" alt="">
+                            <div class="banner_geo d-lg-block d-none" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                 kara<span>kol</span>
+                            </div>
+                            <div class="banner_karakol text-white text-center d-lg-none d-block" style="font-size: 20px;font-family: 'Raleway'; font-weight: 600; text-transform: uppercase;" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+                                karakol
                             </div>
                             <h1 class="banner_title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                                 <span>SKI </span>PARADISE
                             </h1>
-                            <p class="banner_descr">Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения.
+                            <div class="text-center d-lg-none d-block">
+                            <img src="{{ asset('images/eaft.png') }}" alt="">
+                            </div>
+                                <p class="banner_descr">Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения.
                             </p>
                         </div>
                     </div>
@@ -119,7 +127,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4 ">
-                            <div class="funny_title">с нами вам будет весело и уютно</div>
+                            <div class="funny_title">с нами вам будет <span>весело</span> и <span>уютно</span></div>
                         </div>
                         <div class="col-8 ">
                             <div class="row">

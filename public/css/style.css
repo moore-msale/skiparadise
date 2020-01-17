@@ -194,6 +194,7 @@ body {
 
 .banner_img {
   width: 100%;
+  height:100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -230,6 +231,22 @@ body {
   .banner_content {
     top: 0px;
     margin-top: 200px;
+  }
+  .banner
+  {
+    display: flex;
+    align-items: center;
+    height:100%;
+    min-height: 100vh;
+  }
+  .banner_img
+  {
+    position: absolute;
+    top:0;
+    left:0;
+  }
+  .banner_content .container{
+    margin-top:40%;
   }
 }
 
@@ -303,6 +320,9 @@ body {
   letter-spacing: 0.05em;
 }
 
+.banner_geo span {
+  color: #000000;
+}
 @media (max-width: 1200px) {
   .banner_geo {
     font-size: 35px;
@@ -313,6 +333,10 @@ body {
 @media (max-width: 560px) {
   .banner_geo {
     font-size: 20px;
+    text-align: center;
+  }
+  .banner_geo span {
+    color: #fefefe;
   }
 }
 
@@ -323,9 +347,6 @@ body {
   }
 }
 
-.banner_geo span {
-  color: #000000;
-}
 
 .banner_title {
   font-family: "Kelson Sans RU";
@@ -389,7 +410,7 @@ body {
   line-height: 22px;
   text-align: left;
   letter-spacing: 0.1em;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 1);
   max-width: 369px;
   width: 100%;
 }
@@ -411,11 +432,10 @@ body {
 
 @media (max-width: 414px) {
   .banner_descr {
-    padding-top:15%;
     text-align: center;
     max-width: none;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 17px;
+    line-height: 20px;
     color:white;
   }
 }
@@ -697,7 +717,7 @@ body {
 }
 
 .hotel_title span {
-  color: #8caac9;
+  color: #3189e4;
 }
 
 .hotel .snow_man {
@@ -746,8 +766,8 @@ body {
   max-width: 140px;
   width: 100%;
   height: 39px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(185, 185, 185, 0.63)), to(rgba(196, 196, 196, 0)));
-  background: linear-gradient(90deg, rgba(185, 185, 185, 0.63) 0%, rgba(196, 196, 196, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 137, 228, 0.6)), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(90deg, rgba(49, 137, 228, 0.6) 0%, rgba(49, 137, 228, 0) 100%);
   position: relative;
   transition: 0.5s;
 }
@@ -894,6 +914,7 @@ body {
     font-size: 25px;
     margin-bottom: 25px;
   }
+
 }
 
 .funny_number {
@@ -989,7 +1010,7 @@ body {
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
-  color: #1d568c;
+  color: #3189e4;
 }
 
 @media (max-width: 1200px) {
@@ -1031,6 +1052,11 @@ body {
 @media (max-width: 768px) {
   .cottage_descr {
     font-size: 19px;
+    color: rgba(0, 0, 0, 1);
+  }
+  .cottage_descr br
+  {
+    display:none;
   }
 }
 
@@ -1197,7 +1223,7 @@ body {
   font-size: 35px;
   line-height: 42px;
   text-transform: uppercase;
-  color: #1d568c;
+  color: #3189E4;
 }
 
 @media (max-width: 992px) {
@@ -1308,7 +1334,7 @@ body {
 }
 .cottage_link:hover
 {
-  color:#1d568c;
+  color:#3189E4;
   text-decoration: none;
 }
 
@@ -1324,7 +1350,7 @@ body {
   font-size: 70px;
   line-height: 100%;
   text-transform: uppercase;
-  color: #1d568c;
+  color: #3189E4;
   padding: 175px 0px 93px 13px;
 }
 
