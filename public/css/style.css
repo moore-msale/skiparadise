@@ -1317,6 +1317,10 @@ body {
   .activity_item:before {
     display: none;
   }
+  .activity{
+    background-image:url('/images/mobileslice.png');
+    background-size: cover;
+  }
 }
 
 .activity_img img {
@@ -1437,7 +1441,8 @@ body {
 
 @media (max-width: 414px) {
   .easy_inner {
-    margin-top: 50px;
+    margin-top:0px;
+    padding-top: 50px;
   }
 }
 
@@ -1454,6 +1459,10 @@ body {
 @media (max-width: 768px) {
   .easy_inner:before {
     display: none;
+  }
+  .easy
+  {
+    background-image:url('/images/slice2.png');
   }
 }
 
@@ -1679,6 +1688,7 @@ body {
   .section3 {
     min-height: 750px;
     height:950px;
+    background-image: url('/images/mobileslice2.png');
   }
 }
 

@@ -222,7 +222,7 @@
                         <span>заняться?</span>
                     </div>
                     <div class="col-4 activity_img">
-                        <img src="{{ asset('images/Group%2020.svg') }}" alt=" ">
+                        <img class="d-lg-block d-none" src="{{ asset('images/Group%2020.svg') }}" alt=" ">
                     </div>
                     <div class="activity_main">
                         <div class="row justify-content-center">
@@ -306,8 +306,8 @@
             </div>
 
         </div>
-        <div class="easy" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-            <div class="container">
+        <div class="easy">
+            <div class="container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                 <div class="row easy_inner ">
                     <div class="col-12 col-lg-6">
                         <div class="easy_title ">С нами удобно</div>
