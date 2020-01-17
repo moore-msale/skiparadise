@@ -2258,8 +2258,8 @@ body {
   max-width: 169px;
   width: 100%;
   min-height: 39px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(185, 185, 185, 0.63)), to(rgba(196, 196, 196, 0)));
-  background: linear-gradient(90deg, rgba(185, 185, 185, 0.63) 0%, rgba(196, 196, 196, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 137, 228, 0.6)), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(90deg, rgba(49, 137, 228, 0.6) 0%, rgba(49, 137, 228, 0) 100%);
   margin: 10px auto 0;
 }
 
@@ -2469,8 +2469,8 @@ input[type="date"]:valid:before {
   max-width: 169px;
   width: 100%;
   min-height: 39px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(185, 185, 185, 0.63)), to(rgba(196, 196, 196, 0)));
-  background: linear-gradient(90deg, rgba(185, 185, 185, 0.63) 0%, rgba(196, 196, 196, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49, 137, 228, 0.6)), to(rgba(196, 196, 196, 0)));
+  background: linear-gradient(90deg, rgba(49, 137, 228, 0.6) 0%, rgba(49, 137, 228, 0) 100%);
   margin: 52px auto 0;
 }
 
