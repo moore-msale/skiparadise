@@ -99,7 +99,7 @@
 
             </div>
         </div>
-        <div class="section-mobile">
+        <div class="section-mobile w-100">
         <div class="section2">
             <div class="hotel" id="about" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                 <div class="container">
