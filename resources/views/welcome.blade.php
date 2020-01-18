@@ -99,6 +99,7 @@
 
             </div>
         </div>
+        <div class="section-mobile">
         <div class="section2">
             <div class="hotel" id="about" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                 <div class="container">
@@ -166,6 +167,7 @@
                 </div>
             </div>
 
+        </div>
         </div>
         <div class="cottage_menu">
             <div class="container-fluide">
@@ -322,7 +324,7 @@
                             <p>- Ежедневная уборка номера;</p>
                             <p>- Круглосуточно охраняемая территория.</p>
                         </div>
-                        <div class="easy_item ">
+                        <div class="easy_item d-none">
                             <div class="easy_subtitle ">С кем планируете свой отдых?</div>
                             <div class="row ">
                                 <div class="col-6 easy_item_in "><img src="{{ asset('images/withfriends.jpg') }}" alt=" ">
