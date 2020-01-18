@@ -621,6 +621,7 @@ body {
 @media (max-width: 768px) {
   .section-mobile {
     background: url("/images/section2bg.png") center bottom no-repeat;
+    background-size: cover;
   }
   .section2
   {
