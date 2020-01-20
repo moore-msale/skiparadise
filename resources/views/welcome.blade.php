@@ -64,7 +64,7 @@
                                 <span>SKI </span>PARADISE
                             </h1>
                             <div class="text-center d-lg-none d-block">
-                            <img src="{{ asset('images/eaft.png') }}" alt="">
+                            <img src="{{ asset('images/leaft.svg') }}" alt="">
                             </div>
                                 <p class="banner_descr">Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения.
                             </p>
