@@ -1834,6 +1834,7 @@ body {
     text-align: center;
     background: #3497ff;
     color: white;
+    padding: 5%;
   }
 }
 
@@ -1844,6 +1845,7 @@ body {
     margin-bottom: 20px;
     background: #3497ff;
     color: white;
+    padding: 5%;
   }
 }
 .footer .position_descr1 {
@@ -2015,6 +2017,7 @@ body {
   .footer .contact_title {
     font-size: 30px;
     margin-bottom: 25px;
+    margin-top: 15%;
   }
 }
 
