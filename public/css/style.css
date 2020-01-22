@@ -1827,7 +1827,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .footer .position_descr .cont-bag{
+  .footer .position_descr {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 40px;
@@ -1838,7 +1838,7 @@ body {
 }
 
 @media (max-width: 414px) {
-  .footer .position_descr .cont-bag {
+  .footer .position_descr  {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
