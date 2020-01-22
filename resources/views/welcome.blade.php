@@ -106,7 +106,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-xl-5 hotel_item">
                             <div class="hotel_title">
-                                самый <span>современный</span><br class="d-lg-none"> отель в караколе
+                                коттеджный <span>городок</span><br class="d-lg-none"> "SKI Paradise Karakol"
                             </div>
                             <div class="hotel_descr">
                                 <p>Коттеджный городок “Ski Paradise” расположился в 150 метрах от горнолыжной базы «Каракол», на склоне Тянь – Шаня, среди величественных хвойных лесов.</p>
