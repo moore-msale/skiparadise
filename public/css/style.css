@@ -1836,10 +1836,12 @@ body {
 }
 
 @media (max-width: 414px) {
-  .footer .position_descr {
+  .footer .position_descr .cont-bag{
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 20px;
+    background: #3497ff;
+    color: white;
   }
 }
 .footer .position_descr1 {

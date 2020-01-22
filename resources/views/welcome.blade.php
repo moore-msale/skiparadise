@@ -383,7 +383,7 @@
                         <div class="row">
                             <div class="offset-0 offset-lg-6 col-12 col-lg-6 contact_inner " data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                                 <div class="contact_title ">свяжитесь с нами</div>
-                                <p class="position_descr">
+                                <p class="position_descr cont-bag">
                                     <strong>По вопросам заключения договора и бронирования мест обращаться по адресу:</strong>
                                     <br>
                                     <strong>Адрес:</strong> Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу
