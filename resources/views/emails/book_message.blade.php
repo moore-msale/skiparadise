@@ -11,9 +11,6 @@
         <br>
         <br>
         <strong class="TTLight">Имя:</strong> {{ $formData['name'] }}<br>
-        @if($formData['email'])
-        <strong class="TTLight">E-mail:</strong> {{ $formData['email'] }}<br>
-        @endif
         <strong class="TTLight">Телефон:</strong> {{ $formData['phone'] }}<br>
         @if($formData['type'])
         <strong class="TTLight">Тип коттеджа:</strong> {{ $formData['type'] }}<br>

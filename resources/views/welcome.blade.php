@@ -385,7 +385,7 @@
                 </div>
             </div>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="position">
             <div class="row">
             <div class="col-lg-5 col-12 contacts_image"></div>
             <div class="col-lg-7 col-12 p-5" style="background-image: url({{ asset('images/forest.png')}}); background-size:cover; ">
@@ -602,41 +602,40 @@
             <div class="form-bg">
                 <div class="form-box">
                     <div class="py-4 px-4 text-center">
-                    <h2>Забронируйте коттедж</h2>
+                    <h2>Забронируйте <br> коттедж</h2>
                     </div>
                     <div class="row form-box_wrap">
-                        <div class="col-6 form-box_in">
+                        <div class="col-12 form-box_in">
                             <div class="form-box_item">
                                 <div class="name"><input type="text" id="book_1" placeholder="ваше имя" required></div>
                             </div>
-                            <div class="form-box_item">
-                                <div class="phone"><input type="text" id="book_2" placeholder="номер телефона" required></div>
-                            </div>
-                            <div class="form-box_item">
-                                <div class="name"><input type="text" id="book_3" placeholder="ваш email"></div>
-                            </div>
-
-                        </div>
-                        <div class="col-6 form-box_in">
                             <select class="selectpicker" id="book_4">
                                 <option value="{{null}}">тип коттеджа</option>
                                 <option>«Малика»</option>
                                 <option>«Дипломат»</option>
                                 <option>«Амбассадор»</option>
-
                             </select>
+                        </div>
+                        <div class="col-6 form-box_in">
                             <div class="form-box_item">
                                 <div class="name"><input class="date" type="text" id="book_5" placeholder="дата заезда"></div>
                             </div>
+                        </div>
+                        <div class="col-6 form-box_in">
                             <div class="form-box_item">
                                 <div class="phone"><input class="date" type="text" id="book_6" placeholder="дата выезда"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 form-box_in">
+                            <div class="form-box_item">
+                                <div class="phone"><input type="text" id="book_2" placeholder="номер телефона" required></div>
                             </div>
                         </div>
                     </div>
 
 
 
-                    <div class="button">
+                    <div class="button mb-4">
                         <button class="book_send"><span>Отправить заявку</span></button>
                     </div>
 
@@ -652,5 +651,6 @@
         </div>
 
     </div>
-
+        </div>
+    </div>
 @endsection
