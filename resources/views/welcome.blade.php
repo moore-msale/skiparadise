@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
     <div class="skiparadise">
-
         <header class="header">
             <div class="container">
                 <div class="row">
@@ -22,7 +21,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
                     <div class="menu">
                         <button class="nav-tgl" type="button" aria-label="toggle menu">
@@ -41,10 +39,7 @@
                             </ul>
                         </nav>
                     </div>
-
                 </div>
-
-
             </div>
         </header>
         <div class="banner">
@@ -54,7 +49,7 @@
                 <div class="container">
                     <div class="banner_content-inner">
                         <div class="banner_content-inner_line text-sm-center">
-                            <img class="w-50 d-lg-none d-block mx-auto" src="{{ asset('images/mobile_logo.png') }}" alt="">
+                            <img class="w-50 d-lg-none d-block mx-auto" src="{{ asset('images/mobile_logo.svg') }}" alt="">
                             <div class="banner_geo d-lg-block d-none" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                 karakol
                             </div>
@@ -69,7 +64,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div class="facts">
                 <div class="container">
@@ -91,10 +85,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
         </div>
         <div class="section-mobile w-100">
@@ -166,7 +157,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         </div>
         <div class="cottage_menu">
@@ -303,10 +293,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
         <div class="easy">
             <div class="container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
@@ -441,7 +429,6 @@
                     <div class="col-lg-6 col-12 d-flex align-items-end pt-lg-0 pt-4">
                         <div class="button position-relative" style="z-index: 1">
                         <a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>посмотреть на карте</span></a>
-
                         </div>
                     </div>
                 </div>
@@ -478,7 +465,6 @@
 
 " class="contacts_descr" style="color: #3189E4;">
                                 ski.paradise@mail.ru
-
                             </a>
                         </div>
                     </div>
@@ -565,7 +551,6 @@
                 {{--</div>--}}
             {{--</div>--}}
         {{--</div>--}}
-
     {{--</div>--}}
     <div class="contact-us" id="login">
         <div class="form">
@@ -588,7 +573,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="success_contact w-100 py-3 text-center text-white" style="background-color: #7feb89; display:none;">
             Заявка успешно отправлена!
@@ -632,14 +616,9 @@
                             </div>
                         </div>
                     </div>
-
-
-
                     <div class="button mb-4">
                         <button class="book_send"><span>Отправить заявку</span></button>
                     </div>
-
-
                 </div>
             </div>
             <div class="success_book w-100 py-3 text-center text-white" style="background-color: #7feb89; display:none;">
@@ -649,7 +628,6 @@
                 Произошла ошибка!
             </div>
         </div>
-
     </div>
         </div>
     </div>
