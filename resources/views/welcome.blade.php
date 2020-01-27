@@ -8,17 +8,17 @@
                     <div class=" col-md-8">
                         <div class="header_logo">
                             {{--<a href="#">ski paradise</a>--}}
-                            <img class="logo d-lg-block d-none" src="{{ asset('images/footer_pic.png') }}" alt="">
+                            <img class="logo d-lg-block d-none" src="{{ asset('images/mainlogo.png') }}" alt="">
                         </div>
                     </div>
                     <div class="col-4 d-none d-lg-block">
                         <div class="header_menu">
                             <ul>
                                 <li>
-                                    <a class="call" href="#login" data-fancybox>связаться</a>
+                                    <a class="call" href="#login" data-fancybox><i class="fas fa-phone mr-1 "></i>связаться</a>
                                 </li>
                                 <li>
-                                    <a class="book" href="#bookus" data-fancybox>забронировать</a>
+                                    <a class="book" href="#bookus" data-fancybox><i class="far fa-calendar-alt mr-1"></i>забронировать</a>
                                 </li>
                             </ul>
                         </div>
@@ -29,6 +29,7 @@
                             <!-- this span just for the three dividers in the hamburger button--><span
                                     aria-hidden="true"></span>
                         </button>
+                        <div class="text-uppercase menu-check d-lg-block d-none"><span>меню</span><img style="margin-left: -50px;" src="{{asset('images/menuline.png')}}" alt=""></div>
                         <nav class="nav">
                             <!-- I don't care about the menu elements here so I will hide them-->
                             <ul>
@@ -53,11 +54,8 @@
                 <div class="container">
                     <div class="banner_content-inner">
                         <div class="banner_content-inner_line text-sm-center">
-                            <img class="w-25 d-lg-none d-block mx-auto pb-4" src="{{ asset('images/footer_pic.png') }}" alt="">
+                            <img class="w-25 d-lg-none d-block mx-auto pb-4" src="{{ asset('images/mainlogo.png') }}" alt="">
                             <div class="banner_geo d-lg-block d-none" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
-                                kara<span>kol</span>
-                            </div>
-                            <div class="banner_karakol text-white text-center d-lg-none d-block" style="font-size: 20px;font-family: 'Raleway'; font-weight: 600; text-transform: uppercase;" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                 karakol
                             </div>
                             <h1 class="banner_title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
@@ -66,7 +64,7 @@
                             <div class="text-center d-lg-none d-block">
                             <img src="{{ asset('images/leaft.svg') }}" alt="">
                             </div>
-                                <p class="banner_descr">Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения.
+                                <p class="banner_descr">  Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения.
                             </p>
                         </div>
                     </div>
@@ -127,8 +125,8 @@
             <div class="funny">
                 <div class="container">
                     <div class="row">
-                        <div class="col-4 ">
-                            <div class="funny_title">с нами вам будет <span>весело</span> и <span>уютно</span></div>
+                        <div class="col-4">
+                            <div class="funny_title">с нами <span>весело</span> и уютно</div>
                         </div>
                         <div class="col-8 ">
                             <div class="row">
@@ -158,11 +156,13 @@
         <div class="cottage" id="cottage">
             <div class="container">
                 <div class="row cottage_item">
-                    <div class="col-lg-4 col-12 ">
+                    <div class="col-lg-12 col-12 text-center">
                         <p class="cottage_title">коттеджи</p>
+                        <img src="{{asset('images/line.png')}}" alt="">
                     </div>
-                    <div class="col-lg-8 col-12">
-                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской сосны и <br> представлены в трех вариантах – «Дипломат», «Амбассадор», <br> «Малика».</p>
+                    <div class="col-lg-12 col-12 text-center">
+                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской <br> сосны и представлены в трех вариантах –
+                            <br><strong>«Дипломат»</strong>,<strong> «Амбассадор»</strong>,<strong> «Малика»</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -220,8 +220,8 @@
         <div class="activity" id="relax">
             <div class="container">
                 <div class="row activity_item">
-                    <div class="col-12 col-lg-8 activity_title"> Чем у нас<br class="d-lg-none"> можно
-                        <span>заняться?</span>
+                    <div class="col-12 col-lg-8 activity_title"> Чем у нас<br class="d-lg-none">
+                        <span><br> можно заняться?</span>
                     </div>
                     <div class="col-4 activity_img">
                         <img class="d-lg-block d-none" src="{{ asset('images/Group%2020.svg') }}" alt=" ">
@@ -312,17 +312,52 @@
             <div class="container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                 <div class="row easy_inner ">
                     <div class="col-12 col-lg-6">
-                        <div class="easy_title ">С нами удобно</div>
-                        <div class="easy_descr ">
+                        <div class="easy_title">С нами <span>удобно</span></div>
+                        <div class="easy_descr">
                             <p class="easy_descr_text ">В коттеджном городке «Ski Paradise Karakol» Вас ждет теплый прием персонала и приятный отдых!</p>
-                            <p>В стоимость проживания входят:</p>
-                            <p>- Завтрак, ассортиментный перечень блюд для обслуживания Гостей по системе «Шведский стол»;
-                            </p>
-                            <p>- Трансфер от коттеджного городка “Ski Paradise Karakol” до кассы ski-pass горнолыжной базы «Каракол»;</p>
-                            <p>- Парковка автомобиля;</p>
-                            <p>- Wi-Fi и цифровое телевидение в каждом коттедже городка;</p>
-                            <p>- Ежедневная уборка номера;</p>
-                            <p>- Круглосуточно охраняемая территория.</p>
+                            <p class="font-weight-bold">В стоимость проживания входят:</p>
+                            {{--<p>- Завтрак, ассортиментный перечень блюд для обслуживания Гостей по системе «Шведский стол»;--}}
+                            {{--</p>--}}
+                            {{--<p>- Трансфер от коттеджного городка “Ski Paradise Karakol” до кассы ski-pass горнолыжной базы «Каракол»;</p>--}}
+                            {{--<p>- Парковка автомобиля;</p>--}}
+                            {{--<p>- Wi-Fi и цифровое телевидение в каждом коттедже городка;</p>--}}
+                            {{--<p>- Ежедневная уборка номера;</p>--}}
+                            {{--<p>- Круглосуточно охраняемая территория.</p>--}}
+                            <div class="d-flex pt-3"><img src="{{ asset('images/1point.png') }}" alt=""><div>
+                                    <p class="easy_point_title mb-1">«Шведский стол»</p>
+                                    <p class="easy_point_descr">Завтрак, ассортиментный перечень блюд для обслуживания Гостей</p>
+                                </div>
+                            </div>
+                            <div class="d-flex pl-5"><img src="{{ asset('images/2point.png') }}" alt=""><div class="pl-3">
+                                    <p class="easy_point_title mb-1">Трансфер</p>
+                                    <p class="easy_point_descr">Трансфер от коттеджного городка
+                                        “Ski Paradise Karakol” до кассы ski-pass горнолыжной базы «Каракол»;
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex"><img src="{{ asset('images/3point.png') }}" alt=""><div class="pt-2">
+                                    <p class="easy_point_title mb-1">Парковка</p>
+                                    <p class="easy_point_descr">Парковка автомобиля</p>
+                                </div>
+                            </div>
+                            <div class="d-flex pl-5"><img src="{{ asset('images/4point.png') }}" alt=""><div class="pl-3">
+                                    <p class="easy_point_title mb-1"> Wi-Fi</p>
+                                    <p class="easy_point_descr">Wi-Fi и цифровое телевидение
+                                        в каждом коттедже городка
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex"><img src="{{ asset('images/5point.png') }}" alt=""><div class="pt-2">
+                                    <p class="easy_point_title mb-1"> Уборка номера</p>
+                                    <p class="easy_point_descr">Ежедневная уборка номера</p>
+                                </div>
+                            </div>
+                            <div class="d-flex pl-5"><img src="{{ asset('images/6point.png') }}" alt=""><div class="pl-3 pt-2">
+                                    <p class="easy_point_title mb-1"> Охрана</p>
+                                    <p class="easy_point_descr">Круглосуточно  охраняемая территория
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="easy_item d-none">
                             <div class="easy_subtitle ">С кем планируете свой отдых?</div>
@@ -350,68 +385,188 @@
                 </div>
             </div>
         </div>
-        <div class="section3">
-            <div class="footer ">
-                <div class="position" id="position">
-                    <div class="container ">
-                        <div class="row position_item">
-                            <div class="col-12 col-lg-6 position_inner">
-                                <p class="position_title ">Как <br class="d-none d-lg-block"> добраться <br class="d-none d-lg-block"> к нам?</p>
-                                <p class="position_descr ">От столицы Кыргызстана Бишкека до города Каракол 430 км. Дорога проходит через живописное Боомское ущелье, вдоль береговой линии красивейшего озера Иссык-Куль.
-                                </p>
-                                <p class="position_descr">
-                                    Из Бишкека (Западный автовокзал, Бишкек)
-                                    <br> - Маршрутка / Выезд в утренние часы / 5-6 часов / 350 Сом<br> - Место в такси / Выезд в утренние часы, по заполнению транспорта / 5-6 часов / 500-800 Сом<br> - Ночной автобус / 21:00, 22:00 и 23:00 / 5-6 часов
-                                    / 350 Сом<br> - Личный автомобиль / следовать по трассе А-365 и А-363 / в г. Каракол ехать по ул. Фучика до шлагбаума / 5-6 часов
-                                </p>
-                                <div class="button position-relative" style="z-index: 1">
-                                    <a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>посмотреть на карте</span></a>
-
-                                </div>
-
-                            </div>
-                            <div class="col-6 position_right " data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
-                                <img class="white_ski" style="background-color: #f7f7f7;" src="{{ asset('images/footer_pic.png') }} " alt=" ">
-                                <img class="km " src="{{ asset('images/430%20%D0%BA%D0%BC.png') }} " alt=" ">
-                                <p class="position_text ">от Бишкека до города Каракол</p>
-                            </div>
+        <div class="contacts">
+            <div class="row">
+            <div class="col-lg-5 col-12 contacts_image"></div>
+            <div class="col-lg-7 col-12 p-5" style="background-image: url({{ asset('images/forest.png')}}); background-size:cover; ">
+                <div class="contacts_title">Как <span><br>добраться</span><br> к нам?</div>
+                <div class="contacts_descr">
+                    От столицы Кыргызстана Бишкека до города <br>Каракол 430 км. Дорога проходит через <br> живописное Боомское ущелье, вдоль береговой
+                    <br>линии красивейшего озера Иссык-Куль.
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-6">
+                        <img src="{{asset('images/minibus1.svg')}}">
+                        <div class="contacts_point_title font-weight-bold pb-2">
+                            Маршрутка
+                        </div>
+                        <div class="contacts_point_title">
+                            Выезд в утренние часы
+                            5-6 часов, 350 сом
                         </div>
                     </div>
-                </div>
-                <div class="contact ">
-                    <div class="container" style="transform: translateY(10%);">
-                        <div class="row">
-                            <div class="offset-0 offset-lg-6 col-12 col-lg-6 contact_inner " data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
-                                <div class="contact_title ">свяжитесь с нами</div>
-                                <p class="position_descr cont-bag">
-                                    <strong>По вопросам заключения договора и бронирования мест обращаться по адресу:</strong>
-                                    <br>
-                                    <strong>Адрес:</strong> Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу
+                    <div class="col-lg-4 col-6">
+                        <img class="pb-3" src="{{asset('images/taxi.svg')}}">
+                        <div class="contacts_point_title font-weight-bold pb-2">
+                            Место в такси
+                        </div>
+                        <div class="contacts_point_title">
+                            Выезд в утренние часы,
+                            по заполнению транспорта
+                            5-6 часов, 500-800 сом
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 pt-lg-0 pt-4">
+                        <img src="{{asset('images/bus1.svg')}}">
+                        <div class="contacts_point_title font-weight-bold pb-2">
+                            Ночной автобус
+                        </div>
+                        <div class="contacts_point_title">
 
-                                    <br>
-                                    {{--<strong>Telegram</strong><a href="https://t.me/phone=996508600200">+996 508 600 200</a>--}}
-                                    {{--<br>--}}
-                                    <strong>E-mail:</strong><a href="mailto:ski.paradise@mail.ru" style="text-decoration: none; color:black;"> ski.paradise@mail.ru</a>
-                                    <br>
-                                    <strong>instagram:</strong> <a href="https://instagram.com/skiparadise_karakol" style="text-decoration: none; color:black;">skiparadise_karakol</a>
-                                    <br>
-                                    <strong>facebook: </strong><a href="https://www.facebook.com/Ski-Paradise-600171447070417/" style="text-decoration: none; color:black;">Ski Paradise</a>
-                                    <br>
-                                    <div class="p-3" style="border:1px solid #000000;">
-                                    <span class="position_descr1 mb-0"><strong>тел:</strong><a href="tel: +996 550 600 200" style="text-decoration: none; color:black;"> +996 550 600 200</a>;<a
-                                                href="tel: +996 508 600 200" style="text-decoration: none; color:black;"> +996 508 600 200</a></span>
-                                    <br>
-                                    <span class="position_descr1 mb-0"><strong>WhatsApp: </strong><a href="https://api.whatsapp.com/send?phone=996508600200" style="text-decoration: none; color:black;">+996 508 600 200</a></span>
-                                </div>
-                                </p>
-                            </div>
+                            21:00, 22:00 и 23:00
+                            5-6 часов, 350 сом
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-6 pt-lg-4 pt-4">
+                        <img class="pb-3" src="{{asset('images/car.svg')}}">
+                        <div class="contacts_point_title font-weight-bold pb-2">
+                            Личный автомобиль
+                        </div>
+                        <div class="contacts_point_title">
+                            Следовать по трассе А-365 и А-363 в г. Каракол ехать по ул. Фучика
+                            до шлагбаума, 5-6 часов
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex align-items-end pt-lg-0 pt-4">
+                        <div class="button position-relative" style="z-index: 1">
+                        <a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>посмотреть на карте</span></a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+            <div class="main-footer" style="background-image: url({{asset('images/footer_bg.png')}}); background-size:cover;">
+                <div class="d-flex">
+                    <div>
+                <div class="footer_title position-relative">Свяжитесь<span><br>с нами</span></div>
+                <div class="contacts_descr">
+                    По вопросам заключения договора
+                    и бронирования мест обращаться:
+                </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <img src="{{ asset('images/footer_logo.png') }}" alt="">
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-lg-4 col-12">
+                        <div class="d-flex align-items-center">
+                        <img src="{{ asset('images/pin1.svg') }}" alt=""><p class="contacts_descr" style="color: rgba(43, 43, 43, 0.7);"> Кыргызстан, Иссык-Кульская область,<br>
+ г. Каракол, ущелье Кашка-Суу
+</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ asset('images/whatsapp11.svg') }}" alt=""><a href="https://api.whatsapp.com/send?phone=996508600200
+" class="contacts_descr" style="color: #3189E4;">
+                                +996 508 600 200
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img class="px-2" src="{{ asset('images/mail.svg') }}" alt=""><a href="mailto:ski.paradise@mail.ru
 
-    </div>
+" class="contacts_descr" style="color: #3189E4;">
+                                ski.paradise@mail.ru
+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 pt-lg-0 pt-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <img src="{{ asset('images/phone.svg') }}" alt="">
+                                <div class="pl-2">
+                                    <a href="tel:+996 550 600 200" class="contacts_descr" style="color:  #3189E4;"> +996 550 600 200
+                                        </a><br>
+                                    <a href="tel:+996 508 600 200" class="contacts_descr" style="color: #3189E4">+996 508 600 200
+                                        </a>
+                                </div>
+                            </div>
+                        <div class="d-flex align-items-center mb-1">
+                            <img class="px-2" src="{{ asset('images/instagram.svg') }}" alt=""><a href="https://www.instagram.com/skiparadise_karakol/" class="contacts_descr" style="color: #3189E4;">
+                                @skiparadise_karakol
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <img class="pl-2 pr-3" src="{{ asset('images/facebook.svg') }}" alt=""><a href="https://www.facebook.com/skiparadisekg/" class="contacts_descr" style="color: #3189E4;">
+                                Ski Paradise
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{--<div class="section3">--}}
+            {{--<div class="footer ">--}}
+                {{--<div class="position" id="position">--}}
+                    {{--<div class="container ">--}}
+                        {{--<div class="row position_item">--}}
+                            {{--<div class="col-12 col-lg-6 position_inner">--}}
+                                {{--<p class="position_title ">Как <br class="d-none d-lg-block"> добраться <br class="d-none d-lg-block"> к нам?</p>--}}
+                                {{--<p class="position_descr ">От столицы Кыргызстана Бишкека до города Каракол 430 км. Дорога проходит через живописное Боомское ущелье, вдоль береговой линии красивейшего озера Иссык-Куль.--}}
+                                {{--</p>--}}
+                                {{--<p class="position_descr">--}}
+                                    {{--Из Бишкека (Западный автовокзал, Бишкек)--}}
+                                    {{--<br> - Маршрутка / Выезд в утренние часы / 5-6 часов / 350 Сом<br> - Место в такси / Выезд в утренние часы, по заполнению транспорта / 5-6 часов / 500-800 Сом<br> - Ночной автобус / 21:00, 22:00 и 23:00 / 5-6 часов--}}
+                                    {{--/ 350 Сом<br> - Личный автомобиль / следовать по трассе А-365 и А-363 / в г. Каракол ехать по ул. Фучика до шлагбаума / 5-6 часов--}}
+                                {{--</p>--}}
+                                {{--<div class="button position-relative" style="z-index: 1">--}}
+                                    {{--<a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>посмотреть на карте</span></a>--}}
+
+                                {{--</div>--}}
+
+                            {{--</div>--}}
+                            {{--<div class="col-6 position_right " data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">--}}
+                                {{--<img class="white_ski" style="background-color: #f7f7f7;" src="{{ asset('images/footer_pic.png') }} " alt=" ">--}}
+                                {{--<img class="km " src="{{ asset('images/430%20%D0%BA%D0%BC.png') }} " alt=" ">--}}
+                                {{--<p class="position_text ">от Бишкека до города Каракол</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+                {{--<div class="contact ">--}}
+                    {{--<div class="container" style="transform: translateY(10%);">--}}
+                        {{--<div class="row">--}}
+                            {{--<div class="offset-0 offset-lg-6 col-12 col-lg-6 contact_inner " data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">--}}
+                                {{--<div class="contact_title ">свяжитесь с нами</div>--}}
+                                {{--<p class="position_descr cont-bag">--}}
+                                    {{--<strong>По вопросам заключения договора и бронирования мест обращаться по адресу:</strong>--}}
+                                    {{--<br>--}}
+                                    {{--<strong>Адрес:</strong> Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу--}}
+
+                                    {{--<br>--}}
+                                    {{--<strong>Telegram</strong><a href="https://t.me/phone=996508600200">+996 508 600 200</a>--}}
+                                    {{--<br>--}}
+                                    {{--<strong>E-mail:</strong><a href="mailto:ski.paradise@mail.ru" style="text-decoration: none; color:black;"> ski.paradise@mail.ru</a>--}}
+                                    {{--<br>--}}
+                                    {{--<strong>instagram:</strong> <a href="https://instagram.com/skiparadise_karakol" style="text-decoration: none; color:black;">skiparadise_karakol</a>--}}
+                                    {{--<br>--}}
+                                    {{--<strong>facebook: </strong><a href="https://www.facebook.com/Ski-Paradise-600171447070417/" style="text-decoration: none; color:black;">Ski Paradise</a>--}}
+                                    {{--<br>--}}
+                                    {{--<div class="p-3" style="border:1px solid #000000;">--}}
+                                    {{--<span class="position_descr1 mb-0"><strong>тел:</strong><a href="tel: +996 550 600 200" style="text-decoration: none; color:black;"> +996 550 600 200</a>;<a--}}
+                                                {{--href="tel: +996 508 600 200" style="text-decoration: none; color:black;"> +996 508 600 200</a></span>--}}
+                                    {{--<br>--}}
+                                    {{--<span class="position_descr1 mb-0"><strong>WhatsApp: </strong><a href="https://api.whatsapp.com/send?phone=996508600200" style="text-decoration: none; color:black;">+996 508 600 200</a></span>--}}
+                                {{--</div>--}}
+                                {{--</p>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+
+    {{--</div>--}}
     <div class="contact-us" id="login">
         <div class="form">
             <div class="form-bg">

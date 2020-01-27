@@ -23,6 +23,40 @@
 }
 
 @font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Light.eot');
+  src: local('../fonts/Ubuntu/Ubuntu Light'), local('../fonts/Ubuntu/Ubuntu-Light'),
+  url('../fonts/Ubuntu/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu/Ubuntu-Light.woff') format('woff'),
+  url('../fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Medium.eot');
+  src: local('../fonts/Ubuntu/Ubuntu Medium'), local('../fonts/Ubuntu/Ubuntu-Medium'),
+  url('../fonts/Ubuntu/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu/Ubuntu-Medium.woff') format('woff'),
+  url('../fonts/Ubuntu/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Bold.eot');
+  src: local('../fonts/Ubuntu/Ubuntu Bold'), local('../fonts/Ubuntu/Ubuntu-Bold'),
+  url('../fonts/Ubuntu/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Ubuntu/Ubuntu-Bold.woff') format('woff'),
+  url('../fonts/Ubuntu/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
   font-family: "Raleway";
   src: url(../fonts/Raleway-Regular.ttf);
 }
@@ -185,7 +219,7 @@ body {
 }
 
 .header_menu ul li a:hover {
-  color: #000000;
+  color:#3189E4;
 }
 
 .banner {
@@ -355,7 +389,7 @@ body {
   line-height: 173px;
   text-align: center;
   color: #ffffff;
-  margin-bottom: 97px;
+  margin-bottom: 27px;
 }
 
 @media (max-width: 1200px) {
@@ -404,8 +438,8 @@ body {
 }
 
 .banner_descr {
-  font-family: "Kelson Sans RU";
-  font-weight: 300;
+  font-family: "Ubuntu";
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: left;
@@ -570,8 +604,8 @@ body {
 }
 
 .facts_descr {
-  font-family: "Kelson Sans RU";
-  font-weight: 300;
+  font-family: "Ubuntu";
+  font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #ffffff;
@@ -595,8 +629,8 @@ body {
 }
 
 .section2 {
-  background: url("../images/landscape-photo-of-snow-cappedmountain-2086271-2 1.svg") center bottom no-repeat;
-  background-size: contain;
+  background: url("../images/section2.png") center bottom no-repeat;
+  background-size: cover;
   padding: 0px 0 150px;
   min-height: 1950px;
   display: -webkit-box;
@@ -668,7 +702,7 @@ body {
   position: absolute;
   background: url(../images/Group51.png) center no-repeat;
   width: 35px;
-  height: 1500px;
+  height: 1350px;
   top: 45px;
   left: -25px;
 }
@@ -686,9 +720,9 @@ body {
 }
 
 .hotel_title {
-  font-family: "Kelson Sans RU";
+  font-family: "Ubuntu";
   font-weight: bold;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 100%;
   text-transform: uppercase;
   color: #2b2b2b;
@@ -744,9 +778,9 @@ body {
 }
 
 .hotel_descr p {
-  font-family: "Kelson Sans RU";
-  font-weight: 300;
-  font-size: 22px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 20px;
   line-height: 26px;
   color: #000000;
   margin-bottom: 43px;
@@ -801,9 +835,9 @@ body {
 }
 
 .button a {
-  font-family: "Kelson Sans RU";
-  font-weight: 300;
-  font-size: 14px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 10px;
   line-height: 39px;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
@@ -848,25 +882,25 @@ body {
 }
 
 .funny {
-  margin-top: 300px;
+  margin-top: 0px;
   width: 100%;
 }
 
 @media (max-width: 1200px) {
   .funny {
-    margin-top: 200px;
+    margin-top: 50px;
   }
 }
 
 @media (max-width: 992px) {
   .funny {
-    margin-top: 150px;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .funny {
-    margin-top: 100px;
+    margin-top: 20px;
   }
 }
 
@@ -897,13 +931,18 @@ body {
 }
 
 .funny_title {
-  font-family: "Kelson Sans RU";
+  font-family: "Ubuntu";
   font-weight: bold;
-  font-size: 70px;
+  font-size: 60px;
   line-height: 100%;
   text-transform: uppercase;
   color: #3f3f3f;
+  padding-right:16%;
   margin: 0 0 0 10px;
+}
+.funny_title span
+{
+  color: #3189e4;
 }
 
 @media (max-width: 1200px) {
@@ -928,7 +967,7 @@ body {
 }
 
 .funny_number {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   min-height: 112px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -962,7 +1001,9 @@ body {
 }
 
 .cottage {
-  margin-top: 50px;
+  padding-top: 50px;
+  background-image: url("../images/cottege_slice.png");
+  background-size:cover;
 }
 
 @media (max-width: 768px) {
@@ -972,7 +1013,7 @@ body {
 }
 
 .cottage_item {
-  margin-bottom: 65px;
+  padding-bottom: 65px;
   position: relative;
 }
 
@@ -999,7 +1040,7 @@ body {
   height: 310px;
   top: -150px;
   left: -29px;
-  background: url(../images/Group6a.png) center no-repeat;
+  /*background: url(../images/Group6a.png) center no-repeat;*/
 }
 
 @media (max-width: 992px) {
@@ -1017,10 +1058,10 @@ body {
 .cottage_title {
   font-family: "Kelson Sans RU";
   font-weight: bold;
-  font-size: 70px;
-  line-height: 84px;
+  font-size: 40px;
+  line-height: 44px;
   text-transform: uppercase;
-  color: #3189e4;
+  color: #000000;
 }
 
 @media (max-width: 1200px) {
@@ -1044,11 +1085,11 @@ body {
 }
 
 .cottage_descr {
-  font-family: "Kelson Sans RU";
-  font-weight: 300;
+  font-family: "Ubuntu";
+  font-weight: 400;
   font-size: 22px;
   line-height: 30px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 1);
 }
 
 @media (max-width: 1200px) {
@@ -1425,10 +1466,10 @@ body {
 }
 .adv_text
 {
-  font-family: "Kelson Sans RU";
+  font-family: "Ubuntu";
   font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 19px;
   text-transform: uppercase;
 }
@@ -1484,10 +1525,18 @@ body {
   text-transform: uppercase;
   color: #2f2f2f;
   margin-bottom: 42px;
-  max-width: 260px;
   width: 100%;
 }
-
+.easy_title span
+{
+  color:#3189E4;
+}
+.easy
+{
+  background-image: url("../images/easy.png");
+  background-size:cover;
+  padding-bottom:200px;
+}
 @media (max-width: 1200px) {
   .easy_title {
     font-size: 50px;
@@ -1509,9 +1558,9 @@ body {
 }
 
 .easy_descr {
-  font-family: "Kelson Sans RU";
-  font-weight: 300;
-  font-size: 22px;
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 20px;
   line-height: 26px;
   color: #000000;
   max-width: 507px;
@@ -1542,7 +1591,20 @@ body {
     font-size: 14px;
   }
 }
-
+.easy_point_title
+{
+  font-size: 18px;
+  line-height: 20px;
+  font-family: 'Ubuntu';
+  font-weight: 600;
+}
+.easy_point_descr
+{
+  font-size:16px;
+  line-height: 18px;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+}
 .easy_descr_text {
   margin-bottom: 25px;
 }
@@ -1665,6 +1727,196 @@ body {
     min-height: 400px;
   }
 }
+
+.contacts_title
+{
+  font-family: "Kelson Sans RU";
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  margin-bottom: 42px;
+  width: 100%;
+}
+.contacts_title span
+{
+  color:#3189E4;
+}
+.contacts_descr
+{
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  max-width: 507px;
+  width: 100%;
+}
+.contacts_title:before{
+  content: "";
+  position: absolute;
+  background: url(../images/contacts_line.png) center no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 450px;
+  top: 45px;
+  left: 15px;
+}
+@media (max-width: 1200px) {
+  .contacts_title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contacts_title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .contacts_title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+}
+
+.footer_title
+{
+  font-family: "Kelson Sans RU";
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #2f2f2f;
+  margin-bottom: 42px;
+  width: 100%;
+}
+.footer_title span
+{
+  color:#3189E4;
+}
+.footer_title:before{
+  content: "";
+  position: absolute;
+  background: url(../images/contacts_line.png) center no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 450px;
+  top: 45px;
+  left: -30px;
+}
+@media (max-width: 1200px) {
+  .footer_title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer_title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 414px) {
+  .footer_title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+}
+.contacts_image
+{
+  background-image: url("../images/contacts_image.png");
+  background-size: cover;
+}
+.contacts_point_title
+{
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  max-width: 507px;
+  width: 100%;
+}
+.main-footer
+{
+  padding: 50px 100px;
+}
+@media (max-width: 1200px) {
+  .contacts_descr {
+    font-size: 20px;
+    max-width: 400px;
+  }
+  .main-footer
+  {
+    padding: 30px 70px;
+  }
+}
+
+@media (max-width: 998px) {
+  .contacts_descr {
+    max-width: 700px;
+  }
+  .main-footer
+  {
+    padding: 15px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts_descr {
+    font-size: 18px;
+  }
+  .main-footer
+  {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .contacts_descr {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .section3 {
   background: url(../images/Group42b.jpg) center no-repeat;
@@ -2102,11 +2354,20 @@ body {
   border: none;
   border-radius: 50%;
   padding: 0;
-  background: transparent;
-  -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.24);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1), inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1), inset 0px 1px 5px rgba(0, 0, 0, 0.1);
   line-height: 0.6;
   text-align: center;
+}
+.menu-check
+{
+  font-family: Ubuntu;
+  position: fixed;
+  top:150px;
+  right:0px;
+  transform: rotateZ(-90deg);
+  opacity: 0.5;
 }
 
 @media (max-width: 414px) {
@@ -2126,7 +2387,7 @@ body {
   height: 2px;
   width: 34px;
   border-radius: 1px;
-  background: #293335;
+  background: #3189E4;
   vertical-align: middle;
 }
 
@@ -2136,7 +2397,7 @@ body {
   content: "";
   height: 2px;
   border-radius: 1px;
-  background: #293335;
+  background: #3189E4;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   top: -11px;
@@ -2150,7 +2411,7 @@ body {
   content: "";
   height: 2px;
   border-radius: 1px;
-  background: #293335;
+  background: #3189E4;
   -webkit-transition: all 200ms;
   transition: all 200ms;
   top: 11px;
@@ -2776,7 +3037,7 @@ input[type="date"]:valid:before {
 .circlephone2{box-sizing:content-box;-webkit-box-sizing:content-box;border: 2px solid #1d568c;width:100px;height:100px;bottom:9px;right:45px;position:absolute;-webkit-border-radius:0;-moz-border-radius: 0;border-radius: 100px;opacity: .5;-webkit-animation: circle-anim 2.4s infinite ease-in-out !important;-moz-animation: circle-anim 2.4s infinite ease-in-out !important;-ms-animation: circle-anim 2.4s infinite ease-in-out !important;-o-animation: circle-anim 2.4s infinite ease-in-out !important;animation: circle-anim 2.4s infinite ease-in-out !important;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
 .circle-fill2{box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#ffffff;width:90px;height:90px;bottom:14px;right:49px;position:absolute;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 100px;border: 2px solid transparent;-webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;-moz-animation: circle-fill-anim 2.3s infinite ease-in-out;-ms-animation: circle-fill-anim 2.3s infinite ease-in-out;-o-animation: circle-fill-anim 2.3s infinite ease-in-out;animation: circle-fill-anim 2.3s infinite ease-in-out;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
 .img-circle2{box-sizing:content-box;-webkit-box-sizing:content-box;width:90px;height:90px;bottom: 14px;right: 49px;position:absolute;-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0;border: 2px solid transparent;opacity: .7;}
-.img-circleblock2{box-sizing:content-box;-webkit-box-sizing:content-box;width:90px;height:90px;background-position: center center;background-repeat:no-repeat;animation-name: tossing;-webkit-animation-name: tossing;animation-duration: 1.5s;-webkit-animation-duration: 1.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;cursor: pointer;}
+.img-circleblock2{box-sizing:content-box;-webkit-box-sizing:content-box;width:90px;height:90px; border-radius: 50%; background-position: center center;background-repeat:no-repeat;animation-name: tossing;-webkit-animation-name: tossing;animation-duration: 1.5s;-webkit-animation-duration: 1.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;cursor: pointer;}
 .img-circle2:hover{opacity: 1;}
 @keyframes pulse {0% {transform: scale(0.9);opacity: 1;}
   50% {transform: scale(1); opacity: 1; }   
