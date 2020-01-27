@@ -32,8 +32,7 @@
     <i class="fab fa-whatsapp fa-2x" style="color:#888888;"></i>
 </div> -->
     </a>
-    <span onclick="openNav()" id="popup__toggle2"><div class="circlephone2" style="transform-origin: center;"></div><div class="circle-fill2" style="transform-origin: center;"></div><div class="img-circle2" style="transform-origin: center;"><div class="img-circleblock2 d-flex align-items-center bg-white" style="transform-origin: center;"><img class="mx-auto"
-                        src="{{ asset('images/comment.png') }}" alt=""></div></div></span>
+    <span onclick="openNav()" id="popup__toggle2"><div class="circlephone2" style="transform-origin: center;"></div><div class="circle-fill2" style="transform-origin: center;"></div><div class="img-circle2" style="transform-origin: center;"><div class="img-circleblock2 d-flex align-items-center" style="transform-origin: center; background-color: #77c6ff;"><i class="fas fa-phone mx-auto fa-2x text-white"></i></div></div></span>
     <div id="mySidenav" class="sidenav d-md-block">
         <div class="mo-one">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
