@@ -54,7 +54,7 @@
                 <div class="container">
                     <div class="banner_content-inner">
                         <div class="banner_content-inner_line text-sm-center">
-                            <img class="w-25 d-lg-none d-block mx-auto pb-4" src="{{ asset('images/mainlogo.png') }}" alt="">
+                            <img class="w-50 d-lg-none d-block mx-auto" src="{{ asset('images/mobile_logo.png') }}" alt="">
                             <div class="banner_geo d-lg-block d-none" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                 karakol
                             </div>
