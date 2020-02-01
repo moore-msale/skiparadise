@@ -1,21 +1,21 @@
 
-<div class="modal fade" id="cottage-2" tabindex="-1" role="dialog" aria-labelledby="productModal"
+<div class="modal fade" id="cottage-0" tabindex="-1" role="dialog" aria-labelledby="productModal"
      aria-hidden="true">
     <div class="modal-dialog modal modal-dialog-centered overflow-hidden h-auto" role="document">
         <!--Content-->
         <div class="modal-content position-relative border-0" style="border-radius:0;">
             <!--Header-->
             <div class="modal-body">
-                <div class="position-absolute w-100 h-100" style="background-image: url({{ asset('images/cottage2.jpg') }}); top:0; left:0; background-size: cover; opacity: 0.2; background-position: center;"></div>
+                <div class="position-absolute w-100 h-100" style="background-image: url({{ asset('images/cottage1.jpg') }}); top:0; left:0; background-size: cover; opacity: 0.2; background-position: center;"></div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" class="white-text">&times;</span>
                 </button>
                 <div class="px-lg-4 px-0">
                     <span class="cottage_menu_title mr-3">коттедж</span>
-                    <span class="cottage_menu_name">Дипломат</span>
-                    <p class="cottage_menu_link mt-3">
-                        включает в себя 3 спальные комнаты, гостиную, 2 санузла, террасу, кухню, кладовую и участок в десять соток.
-                    </p>
+                    <span class="cottage_menu_name">Эконом</span>
+                    {{--<p class="cottage_menu_link mt-3" >--}}
+                        {{--включает в себя 2 спальные комнаты, гостиную, 1 санузел, кухню.--}}
+                    {{--</p>--}}
                     <p class="cottage_menu_title mt-2 text-lowercase">
                         Прайс лист:
                     </p>
@@ -25,21 +25,21 @@
                                 01.12.2012 - 20.12.2019
                             </div>
                             <div class="col-6 px-0 text-center">
-                                $ 300
+                                $ 150
                             </div>
                             <div class="col-6 px-0">
                                 20.12.2019
                                 - 01.02.2020
                             </div>
                             <div class="col-6 px-0 text-center">
-                                $ 350
+                                $ 150
                             </div>
                             <div class="col-6 px-0">
                                 01.02.2020
                                 - 15.03.2020
                             </div>
                             <div class="col-6 px-0 text-center">
-                                $ 300
+                                $ 150
                             </div>
                             <div class="col-6 px-0 pt-4">
                                 <p class="mb-0 ">

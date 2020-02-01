@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap-material-datetimepicker.css') }}" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <title>Ski paradise</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="manifest" href="{{ asset('js/manifest.json') }}">
@@ -74,9 +75,11 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
     </div>
 </div>
 
+@include('modals.cottage-0')
 @include('modals.cottage-1')
 @include('modals.cottage-2')
 @include('modals.cottage-3')
+@include('modals.cottage-4')
 <script src="{{ asset('js/app.js') }}"></script>
 <script type="text/javascript" src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="{{ asset('js/bootstrap-material-datetimepicker.js') }}"></script>
@@ -86,6 +89,7 @@ text-align: center;width: 50%;color: #fff;font-size: 15px; margin: auto;" href="
 <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 <script src="{{ asset('js/TweenMax.min.js') }}"></script>
 <script src="{{ asset('js/aos.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 <script>
     function openNav() {
