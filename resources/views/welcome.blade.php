@@ -219,7 +219,7 @@
                             <div class="cottage_menu_inner-bottom">
                                 <div>
                                     <p class="cottage_menu_price"><span>от</span> 300$</p>
-                                    {{--<p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/ambassador/1.jpg')}}" data-fancybox="ambassador">фото коттеджа</a></p>--}}
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/ambassador/1.jpg')}}" data-fancybox="ambassador">фото коттеджа</a></p>
                                     @include('photos.ambassador')
                                 </div>
                                 <p class="cottage_menu_link d-flex align-items-end">
@@ -236,7 +236,7 @@
                             <div class="cottage_menu_inner-bottom">
                                 <div>
                                     <p class="cottage_menu_price"><span>от</span> 600$</p>
-                                    {{--<p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/vip/1.jpg')}}" data-fancybox="vip">фото коттеджа</a></p>--}}
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/vip/1.jpg')}}" data-fancybox="vip">фото коттеджа</a></p>
                                     @include('photos.vip')
                                 </div>
                                 <p class="cottage_menu_link d-flex align-items-end">
@@ -299,9 +299,15 @@
                         <p class="cottage_descr mb-pad" style="padding-top:230px;">
                             Вкусите невероятно вкусную пищу из разряда национальной кыргызской кухни, в такой мороз будет особо вкусно
                         </p>
+                        <div class="d-lg-block d-flex">
                         <div class="button position-relative" style="z-index:1; max-width:150px;">
                             <a href="{{asset('images/attribute_price_list.png')}}" data-fancybox="attribute"><span>Посмотреть прайслист</span></a>
                         </div>
+                            <div class="button position-relative mt-lg-3 mt-0" style="z-index:1; max-width:150px;">
+                                <a href="{{asset('images/rent/1.jpg')}}" data-fancybox="rent"><span>Галерея</span></a>
+                            </div>
+                        </div>
+                            @include('photos.rent')
                     </div>
                 </div>
             </div>
