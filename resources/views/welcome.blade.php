@@ -228,7 +228,7 @@
                                     @include('photos.ambassador')
                                 </div>
                                 <p class="cottage_menu_link d-flex align-items-end">
-                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>{!!__('main.image') !!}</a>
+                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>{!!__('main.book') !!}</a>
                                 </p>
                             </div>
                         </div>
