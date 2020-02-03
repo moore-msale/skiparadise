@@ -20,3 +20,4 @@ Route::get('/', 'Controller@index')->name('/');
 Route::post('book_send','MessageController@book')->name('book_send');
 Route::post('contact_send','MessageController@contact')->name('contact_send');
 
+Route::get('/set-language/{lang}', 'LanguageSwitcher@set')->name('set.language');

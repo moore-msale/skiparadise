@@ -48,20 +48,20 @@
                 </div>
             </div>
             <a class="sf-medium pl-5 item-min-b color-mo" style="color:#fff;    margin-top: 7%;
-    margin-bottom: 10%;">Вы можете оставить заявку или почитать подробнее о нас, также можете напрямую проконсультироваться позвонив нам по номерам ниже</a>
+    margin-bottom: 10%;"> {!!__('main.button') !!}</a>
             <a class="sf-medium pl-5 item-min-b men-mo mo-zap so-mo bron" href="#bookus" data-fancybox>
                 <img src="https://emmar-clinic.com/wp-content/uploads/2019/10/Group.png" style="    padding-right: 4%;
     position: relative;
-    top: 3px;" alt="ski paradise">Забронировать</a>
-            <a class="sf-medium pl-5 item-min-b men-mo mo-when so-mo" href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/3-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Как добраться?</a>
-            <a class="sf-medium pl-5 item-min-b men-mo mo-zvon so-mo" href="tel:+996550600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/4-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Позвонить</a>
-            <a class="sf-medium pl-5 item-min-b men-mo mo-wha so-mo" href="https://api.whatsapp.com/send?phone=996508600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/2-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">Написать в Whatsapp</a>
+    top: 3px;" alt="ski paradise"> {!!__('main.button1') !!}</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-when so-mo" href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/3-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">{!!__('main.button2') !!}</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-zvon so-mo" href="tel:+996550600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/4-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">{!!__('main.button3') !!}</a>
+            <a class="sf-medium pl-5 item-min-b men-mo mo-wha so-mo" href="https://api.whatsapp.com/send?phone=996508600200"><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/2-2.png" style="    padding-right: 4%;position: relative;top: 3px;" alt="Стоматология Emmar">{!!__('main.button4') !!}</a>
         </div>
         <div class="mo-two">
             <!--          <a class="sf-medium pl-5 item-min-b men-mo mo-usl so-mo" href="#services">Посмотреть наши услуги</a>
             <a class="sf-medium pl-5 item-min-b men-mo mo-rabo so-mo" href="#our-job">Посмотреть наши работы</a> -->
-            <a class="sf-medium item-min-b men-mo" style="text-align: center;padding: 0px 0px 0px 0px!important;font-weight: 900;color: #fff;">Адрес</a>
-            <a class="sf-medium item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/0.png" style="padding-right: 2%;" alt="Стоматология Emmar">Кыргызстан, Иссык-Кульская область, город Каракол, ущелья Кашка-Суу</a>
+            <a class="sf-medium item-min-b men-mo" style="text-align: center;padding: 0px 0px 0px 0px!important;font-weight: 900;color: #fff;">{!!__('main.button5') !!}</a>
+            <a class="sf-medium item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/0.png" style="padding-right: 2%;" alt="Стоматология Emmar">{!!__('main.buttonadress') !!}</a>
             <!--                 <a class="sf-medium pl-5 item-min-b men-mo" style="font-size:15px;text-align: center;padding: 0;color: white;" ><img src="https://emmar-clinic.com/wp-content/uploads/2019/10/1-2.png" style="padding-right: 2%;" alt="Стоматология Emmar">Пн- сб 8.00 - 20.00</a> -->
             <div class="soc-mo">
                 <a class="sf-medium item-min-b men-mo" style="padding: 4%;align-items: center;background: #598ec5;

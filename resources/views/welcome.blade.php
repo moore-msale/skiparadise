@@ -4,20 +4,25 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class=" col-md-8">
+                    <div class=" col-md-7">
                         <div class="header_logo">
                             {{--<a href="#">ski paradise</a>--}}
                             <img class="logo d-lg-block d-none" src="{{ asset('images/mainlogo.png') }}" alt="">
                         </div>
                     </div>
-                    <div class="col-4 d-none d-lg-block">
+                    <div class="col-5 d-none d-lg-block">
                         <div class="header_menu">
                             <ul>
                                 <li>
-                                    <a class="call" href="#login" data-fancybox><i class="fas fa-phone mr-1 "></i>связаться</a>
+                                    <a class="call" href="#login" data-fancybox><i class="fas fa-phone mr-1 "></i>{{__('main.phone') }}</a>
                                 </li>
                                 <li>
-                                    <a class="book" href="#bookus" data-fancybox><i class="far fa-calendar-alt mr-1"></i>забронировать</a>
+                                    <a class="book" href="#bookus" data-fancybox><i class="far fa-calendar-alt mr-1"></i>{{__('main.date') }}</a>
+                                </li>
+                                <li>
+                                    <a class="h5 text-uppercase"  style="font-size: 14px; color: rgba(0, 0, 0, 0.5);" href="{{ route('set.language', \Illuminate\Support\Facades\App::isLocale('en') ? 'ru' : 'en') }}" id="">
+                                        {{ strtoupper(\Illuminate\Support\Facades\App::isLocale('en') ? 'ru' : 'en') }}
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -27,15 +32,15 @@
                             <!-- this span just for the three dividers in the hamburger button--><span
                                     aria-hidden="true"></span>
                         </button>
-                        <div class="text-uppercase menu-check d-lg-block d-none"><span>меню</span><img style="margin-left: -50px;" src="{{asset('images/menuline.png')}}" alt=""></div>
+                        <div class="text-uppercase menu-check d-lg-block d-none"><span>{{__('main.menu') }}</span><img style="margin-left: -50px;" src="{{asset('images/menuline.png')}}" alt=""></div>
                         <nav class="nav">
                             <!-- I don't care about the menu elements here so I will hide them-->
                             <ul>
-                                <li><a href="#about" class="anchor">О нас</a> </li>
-                                <li><a href="#cottage" class="anchor">коттеджи</a></li>
-                                <li><a href="#position" class="anchor">как добраться<a><li>
-                                        <li><a class="call" href="#login" data-fancybox="">связаться</a></li>
-                                        <li><a class="book" href="#bookus" data-fancybox>забронировать</a></li>
+                                <li><a href="#about" class="anchor">{{__('main.main menu1') }}</a> </li>
+                                <li><a href="#cottage" class="anchor">{{__('main.main menu2') }}</a></li>
+                                <li><a href="#position" class="anchor">{{__('main.main menu3') }}<a><li>
+                                        <li><a class="call" href="#login" data-fancybox="">{{__('main.main menu4') }}</a></li>
+                                        <li><a class="book" href="#bookus" data-fancybox>{{__('main.main menu5') }}</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -59,7 +64,7 @@
                             <div class="text-center d-lg-none d-block">
                             <img src="{{ asset('images/leaft.svg') }}" alt="">
                             </div>
-                                <p class="banner_descr">  Свежий воздух, хвойный лес и белоснежные горные вершины подарят незабываемый отдых любителям спокойного досуга, а также ценителям активного времяпровождения.
+                                <p class="banner_descr">{!!__('main.text1') !!}
                             </p>
                         </div>
                     </div>
@@ -72,7 +77,7 @@
                             <div class="row">
                                 <div class="offset-6 col-6 facts_first" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                     <div class="facts_number">2300</div>
-                                    <div class="facts_descr">Мы находимся на высоте 2300 метров над уровнем моря</div>
+                                    <div class="facts_descr">{!!__('main.2300') !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +85,7 @@
                             <div class="row">
                                 <div class="col-6 facts_second" data-aos="fade-right" data-aos-duration="700" data-aos-delay="200">
                                     <div class="facts_number">33</div>
-                                    <div class="facts_descr">комфортабельных коттеджа</div>
+                                    <div class="facts_descr">{!!__('main.33') !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -95,13 +100,12 @@
                     <div class="row">
                         <div class="col-lg-12 col-xl-5 hotel_item">
                             <div class="hotel_title">
-                                коттеджный <span>городок</span><br class="d-lg-none"> "SKI Paradise Karakol"
+                                {!!__('main.caption1') !!}
                             </div>
                             <div class="hotel_descr">
-                                <p>Коттеджный городок “Ski Paradise” расположился в 150 метрах от горнолыжной базы «Каракол», на склоне Тянь – Шаня, среди величественных хвойных лесов.</p>
-                                <p>На территории Отеля “Ski Paradise” для полноценного отдыха Вас ожидают коттеджи, которые построены из алтайской сосны и представлены в пяти вариантах – «Эконом», «Малика», «Дипломат», «Амбассадор», «VIP»</p>
-                                <p>В горнолыжном комплексе Ski Paradise каждый квадратный метр обустроен для Вашего комфортного и незабываемого отдыха.
-                                </p>
+                                <p>{!!__('main.text2') !!}</p>
+                                <p>{!!__('main.text3') !!}</p>
+                                <p>{!!__('main.text4') !!}</p>
                             </div>
                             {{--<div class="button">--}}
                                 {{--<a href="#"><span>почитать подробнее</span></a>--}}
@@ -117,7 +121,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
-                            <div class="funny_title">с нами <span>весело</span> и уютно</div>
+                            <div class="funny_title">{!! __('main.caption2') !!}</div>
                         </div>
                         <div class="col-8 ">
                             <div class="row">
@@ -125,16 +129,18 @@
                                     <div class="row">
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
                                             <p class="funny_number"><img src="{{ asset('images/150.svg') }}" alt=""></p>
-                                            <p class="funny_descr"> Коттеджный городок “Ski Paradise” расположен в 150 метрах от горнолыжной базы «Каракол».</p>
+                                            <p class="funny_descr2">{!! __('main.meters') !!}</p>
+                                            <p class="funny_descr">{!!__('main.150') !!}</p>
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500">
                                             <p class="funny_number"><img src="{{ asset('images/33.svg') }}" alt=""></p>
-                                            <p class="funny_descr">"SKI Paradise Karakol" - это современный коттеджный городок</p>
+                                            <p class="funny_descr2">{!! __('main.cotteges') !!}</p>
+                                            <p class="funny_descr">{!!__('main.333') !!}</p>
                                         </div>
                                         <div class="col-12 col-md-8 col-lg-4 text-lg-left text-md-center text-center" data-aos="fade-left" data-aos-duration="700" data-aos-delay="700">
                                             <p class="funny_number"><img src="{{ asset('images/20.svg') }}" alt=""></p>
-                                            <p class="funny_descr">Свыше 20 км. трасс горнолыжной базы Каракол способны удовлетворить и опытного лыжника, и человека, покоряющего горные склоны впервые.
-                                            </p>
+                                            <p class="funny_descr2">{!! __('main.kilometers') !!}</p>
+                                            <p class="funny_descr">{!!__('main.20') !!}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -148,12 +154,11 @@
             <div class="container">
                 <div class="row cottage_item">
                     <div class="col-lg-12 col-12 text-center">
-                        <p class="cottage_title">коттеджи</p>
+                        <p class="cottage_title">{!!__('main.caption3') !!}</p>
                         <img src="{{asset('images/line.png')}}" alt="">
                     </div>
                     <div class="col-lg-12 col-12 text-center">
-                        <p class="cottage_descr">Коттеджи Ski Paradise построены из Алтайской <br> сосны и представлены в пяти вариантах –
-                            <br><strong> «VIP»</strong>,<strong> «Дипломат»</strong>,<strong> «Амбассадор»</strong>,<strong> «Малика»</strong>,<strong> «Эконом»</strong>.</p>
+                        <p class="cottage_descr">{!!__('main.text5') !!}</p>
                     </div>
                 </div>
             </div>
@@ -166,16 +171,16 @@
                         <img class="grow" src="{{ asset('images/cottage1.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-0"></div>
-                            <p class="cottage_menu_title">коттедж</p>
-                            <p class="cottage_menu_name">эконом</p>
+                            <p class="cottage_menu_title">{!!__('main.cottage') !!}</p>
+                            <p class="cottage_menu_name">{!!__('main.economy') !!}</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
-                                    <p class="cottage_menu_price"><span>от</span> 150$</p>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/ekonom/1.jpg')}}" data-fancybox="ekonom">фото коттеджа</a></p>
+                                    <p class="cottage_menu_price"><span>{!!__('main.from') !!}</span> 150$</p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/ekonom/1.jpg')}}" data-fancybox="ekonom">{!!__('main.image') !!}</a></p>
                                     @include('photos.ekonom')
                                 </div>
 
-                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;"  href="#bookus" data-fancybox>забронировать</a></p>
+                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;"  href="#bookus" data-fancybox>{!!__('main.book') !!}</a></p>
                             </div>
                         </div>
                     </div>
@@ -183,47 +188,47 @@
                         <img class="grow" src="{{ asset('images/cottage1.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-1"></div>
-                            <p class="cottage_menu_title">коттедж</p>
-                            <p class="cottage_menu_name">малика</p>
+                            <p class="cottage_menu_title">{!!__('main.cottage') !!}</p>
+                            <p class="cottage_menu_name">{!!__('main.malika') !!}</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
-                                    <p class="cottage_menu_price"><span>от</span> 200$</p>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/malika/1.jpg')}}" data-fancybox="malika">фото коттеджа</a></p>
+                                    <p class="cottage_menu_price"><span>{!!__('main.from') !!}</span> 200$</p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/malika/1.jpg')}}" data-fancybox="malika">{!!__('main.image') !!}</a></p>
                                     @include('photos.malika')
                                 </div>
 
-                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;"  href="#bookus" data-fancybox>забронировать</a></p>
+                                <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;"  href="#bookus" data-fancybox>{!!__('main.book') !!}</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage2.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-2"></div>
-                            <p class="cottage_menu_title">коттедж</p>
-                            <p class="cottage_menu_name">Дипломат</p>
+                            <p class="cottage_menu_title">{!!__('main.cottage') !!}</p>
+                            <p class="cottage_menu_name">{!!__('main.diplomat') !!}</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
-                                <p class="cottage_menu_price"><span>от</span> 300$</p>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/diplomat/1.jpg')}}" data-fancybox="diplomat">фото коттеджа</a></p>
+                                <p class="cottage_menu_price"><span>{!!__('main.from') !!}</span> 300$</p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/diplomat/1.jpg')}}" data-fancybox="diplomat">{!!__('main.image') !!}</a></p>
                                     @include('photos.diplomat')
                                 </div>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index: 10;" href="#bookus" data-fancybox>забронировать</a></p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index: 10;" href="#bookus" data-fancybox>{!!__('main.book') !!}</a></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage3.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-3"></div>
-                            <p class="cottage_menu_title">коттедж</p>
-                            <p class="cottage_menu_name">амбассадор</p>
+                            <p class="cottage_menu_title">{!!__('main.cottage') !!}</p>
+                            <p class="cottage_menu_name">{!!__('main.ambassador') !!}</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
-                                    <p class="cottage_menu_price"><span>от</span> 300$</p>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/ambassador/1.jpg')}}" data-fancybox="ambassador">фото коттеджа</a></p>
+                                    <p class="cottage_menu_price"><span>{!!__('main.from') !!}</span> 300$</p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/ambassador/1.jpg')}}" data-fancybox="ambassador">{!!__('main.image') !!}</a></p>
                                     @include('photos.ambassador')
                                 </div>
                                 <p class="cottage_menu_link d-flex align-items-end">
-                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>забронировать</a>
+                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>{!!__('main.image') !!}</a>
                                 </p>
                             </div>
                         </div>
@@ -231,16 +236,16 @@
                     <div class="col-lg-4 col-md-8 col-12 p-0 grow-wrap"><img class="grow" src="{{ asset('images/cottage3.jpg') }}" alt="">
                         <div class="cottage_menu_inner">
                             <div class="w-100 h-100 position-absolute" style="top:0; left:0; z-index: 1; cursor: pointer;" data-toggle="modal" data-target="#cottage-4"></div>
-                            <p class="cottage_menu_title">коттедж</p>
+                            <p class="cottage_menu_title">{!!__('main.cottage') !!}</p>
                             <p class="cottage_menu_name">VIP</p>
                             <div class="cottage_menu_inner-bottom">
                                 <div>
-                                    <p class="cottage_menu_price"><span>от</span> 600$</p>
-                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/vip/1.jpg')}}" data-fancybox="vip">фото коттеджа</a></p>
+                                    <p class="cottage_menu_price"><span>{!!__('main.from') !!}</span> 600$</p>
+                                    <p class="cottage_menu_link d-flex align-items-end"><a class="cottage_link position-relative" style="z-index:10;" href="{{asset('images/vip/1.jpg')}}" data-fancybox="vip">{!!__('main.image') !!}</a></p>
                                     @include('photos.vip')
                                 </div>
                                 <p class="cottage_menu_link d-flex align-items-end">
-                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>забронировать</a>
+                                    <a class="cottage_link position-relative" style="z-index:10;" href="#bookus" data-fancybox>{!!__('main.book') !!}</a>
                                 </p>
                             </div>
                         </div>
@@ -253,28 +258,27 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
 
-                    <p class="restaurant_title"><img class="d-lg-inline d-none" src="{{ asset('images/restaurant_line.png') }}" alt="">Ресторан</p>
+                    <p class="restaurant_title"><img class="d-lg-inline d-none" src="{{ asset('images/restaurant_line.png') }}" alt="">{!!__('main.caption4') !!}</p>
                     <img class="w-100 d-lg-none d-block" src="{{ asset('images/restaurant.png') }}" alt="">
                     <p class="cottage_descr">
-                        Вкусите невероятно вкусную пищу из разряда <strong>национальной кыргызской кухни</strong>, в такой мороз будет особо вкусно
+                        {!!__('main.text6') !!}
                     </p>
-                    <p class="cottage_descr pt-5">Посмотрите меню наших блюд на сайте</p>
+                    <p class="cottage_descr pt-5">{!!__('main.text7') !!}</p>
                     <div class="d-flex">
                         <div class="w-50">
                             <div class="button position-relative" style="z-index: 1">
-                                <a href="{{ asset('images/menu.pdf') }}" data-fancybox="restourant_menu"><span>посмотреть меню</span></a>
+                                <a href="{{ asset('images/menu.pdf') }}" data-fancybox="restourant_menu"><span>{!!__('main.see menu') !!}</span></a>
                             </div>
                         </div>
                         <div class="w-50">
-                           <div class="button position-relative" style="z-index:1">
-                               <a href="{{asset('images/restaurant/1.jpg')}}" data-fancybox="restaurant"><span>галерея ресторана</span></a>
+                           <div class="button position-relative" style="z-index:1; max-width: 180px;">
+                               <a href="{{asset('images/restaurant/1.jpg')}}" data-fancybox="restaurant"><span>{!!__('main.gallery') !!}</span></a>
                                @include('photos.restaurant')
                            </div>
                         </div>
                     </div>
 
-                    <p class="cottage_descr pt-5">По всем вопросам обращайтесь по тел: <br>
-                        <strong>0700310510</strong>
+                    <p class="cottage_descr pt-5">{!!__('main.number') !!}</p>
 
 
                 </div>
@@ -292,19 +296,19 @@
                     </div>
                     <div class="col-lg-4 col-12 position-relative">
                         <div class="position-absolute d-lg-block d-none" style="top:-20%;left:-50%; width:max-content">
-                           <p class="restaurant_title">Прокат лыжных <br><span>снаряжений</span></p>
+                           <p class="restaurant_title">{!!__('main.caption5') !!}</p>
                         </div>
-                        <p class="restaurant_title d-lg-none d-block">Прокат лыжных <br><span>снаряжений</span></p>
+                        <p class="restaurant_title d-lg-none d-block">{!!__('main.caption5') !!}</p>
                         <img class="w-100 d-lg-none d-block" src="{{ asset('images/attribute.png') }}" alt="">
-                        <p class="cottage_descr mb-pad" style="padding-top:230px;">
-                            Вкусите невероятно вкусную пищу из разряда национальной кыргызской кухни, в такой мороз будет особо вкусно
+                        <p class="cottage_descr mb-pad" style="padding-top:230px; opacity:0; pointer-events: none;">
+                            {!!__('main.text8') !!}
                         </p>
                         <div class="d-lg-block d-flex">
                         <div class="button position-relative" style="z-index:1; max-width:150px;">
-                            <a href="{{asset('images/attribute_price_list.png')}}" data-fancybox="attribute"><span>Посмотреть прайслист</span></a>
+                            <a href="{{asset('images/attribute_price_list.png')}}" data-fancybox="attribute"><span>{!!__('main.see price lsit') !!}</span></a>
                         </div>
                             <div class="button position-relative mt-lg-3 mt-0" style="z-index:1; max-width:150px;">
-                                <a href="{{asset('images/rent/1.jpg')}}" data-fancybox="rent"><span>Галерея</span></a>
+                                <a href="{{asset('images/rent/1.jpg')}}" data-fancybox="rent"><span>{!!__('main.gallery2') !!}</span></a>
                             </div>
                         </div>
                             @include('photos.rent')
@@ -315,8 +319,7 @@
         <div class="activity pt-lg-0 pt-5" id="relax">
             <div class="container">
                 <div class="row activity_item">
-                    <div class="col-12 col-lg-8 activity_title"> Чем у нас<br class="d-lg-none">
-                        <span><br> можно заняться?</span>
+                    <div class="col-12 col-lg-8 activity_title">{!!__('main.caption6') !!}
                     </div>
                     <div class="col-4 activity_img">
                         <img class="d-lg-block d-none" src="{{ asset('images/Group%2020.svg') }}" alt=" ">
@@ -328,8 +331,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity1.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        катание на лыжах,
-                                        сноубордах и т.д. =)
+                                        {!!__('main.service1') !!}
                                     </p>
                                 </div>
                             </div>
@@ -338,7 +340,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity2.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        прогулка на снегоходе по снежной территории Ski Paradise
+                                        {!!__('main.service2') !!}
                                     </p>
                                 </div>
                             </div>
@@ -347,7 +349,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity3.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        получить превосходный отдых, расслабившись в бане
+                                        {!!__('main.service3') !!}
                                     </p>
                                 </div>
                             </div>
@@ -356,7 +358,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity4.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        трансфер до кассы ski-pass горнолыжной базы "Каракол"
+                                        {!!__('main.service4') !!}
                                     </p>
                                 </div>
                             </div>
@@ -365,7 +367,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity5.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        организация туров по индивидуальным маршрутам
+                                        {!!__('main.service5') !!}
                                     </p>
                                 </div>
                             </div>
@@ -374,7 +376,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity6.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        Ski-Rent – арендовать горнолыжное снаряжение
+                                        {!!__('main.service6') !!}
                                     </p>
                                 </div>
                             </div>
@@ -383,7 +385,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity7.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        горячий источник "Ак-Суу"
+                                        {!!__('main.service7') !!}
                                     </p>
                                 </div>
                             </div>
@@ -392,7 +394,7 @@
                                 <div class="position-absolute" style="left:40%; top:10%;">
                                     <img style="width:75px; height: 75px;" src="{{ asset('images/activity8.png') }}" alt="">
                                     <p class="adv_text pt-3" style="max-width: 180px">
-                                        организовать мероприятие в конференц-зале
+                                        {!!__('main.service8') !!}
                                     </p>
                                 </div>
                             </div>
@@ -405,10 +407,10 @@
             <div class="container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
                 <div class="row easy_inner ">
                     <div class="col-12 col-lg-6">
-                        <div class="easy_title">С нами <span>удобно</span></div>
+                        <div class="easy_title">{!!__('main.caption7') !!}</div>
                         <div class="easy_descr">
-                            <p class="easy_descr_text ">В коттеджном городке «Ski Paradise Karakol» Вас ждет теплый прием персонала и приятный отдых!</p>
-                            <p class="font-weight-bold">В стоимость проживания входят:</p>
+                            <p class="easy_descr_text ">{!!__('main.text9') !!}</p>
+                            <p class="font-weight-bold">{!!__('main.text10') !!}</p>
                             {{--<p>- Завтрак, ассортиментный перечень блюд для обслуживания Гостей по системе «Шведский стол»;--}}
                             {{--</p>--}}
                             {{--<p>- Трансфер от коттеджного городка “Ski Paradise Karakol” до кассы ski-pass горнолыжной базы «Каракол»;</p>--}}
@@ -417,54 +419,52 @@
                             {{--<p>- Ежедневная уборка номера;</p>--}}
                             {{--<p>- Круглосуточно охраняемая территория.</p>--}}
                             <div class="d-flex pt-3"><img src="{{ asset('images/1point.png') }}" alt=""><div>
-                                    <p class="easy_point_title mb-1">«Шведский стол»</p>
-                                    <p class="easy_point_descr">Завтрак, ассортиментный перечень блюд для обслуживания Гостей</p>
+                                    <p class="easy_point_title mb-1">{!!__('main.1') !!}</p>
+                                    <p class="easy_point_descr">{!!__('main.1.1') !!}</p>
                                 </div>
                             </div>
                             <div class="d-flex pl-5"><img src="{{ asset('images/2point.png') }}" alt=""><div class="pl-3">
-                                    <p class="easy_point_title mb-1">Трансфер</p>
-                                    <p class="easy_point_descr">Трансфер от коттеджного городка
-                                        “Ski Paradise Karakol” до кассы ski-pass горнолыжной базы «Каракол»;
+                                    <p class="easy_point_title mb-1">{!!__('main.2') !!}</p>
+                                    <p class="easy_point_descr">{!!__('main.2.2') !!}
                                     </p>
                                 </div>
                             </div>
                             <div class="d-flex"><img src="{{ asset('images/3point.png') }}" alt=""><div class="pt-2">
-                                    <p class="easy_point_title mb-1">Парковка</p>
-                                    <p class="easy_point_descr">Парковка автомобиля</p>
+                                    <p class="easy_point_title mb-1">{!!__('main.3') !!}</p>
+                                    <p class="easy_point_descr">{!!__('main.3.3') !!}</p>
                                 </div>
                             </div>
                             <div class="d-flex pl-5"><img src="{{ asset('images/4point.png') }}" alt=""><div class="pl-3">
-                                    <p class="easy_point_title mb-1"> Wi-Fi</p>
-                                    <p class="easy_point_descr">Wi-Fi и цифровое телевидение
-                                        в каждом коттедже городка
+                                    <p class="easy_point_title mb-1">{!!__('main.4') !!}</p>
+                                    <p class="easy_point_descr">{!!__('main.4.4') !!}
                                     </p>
                                 </div>
                             </div>
                             <div class="d-flex"><img src="{{ asset('images/5point.png') }}" alt=""><div class="pt-2">
-                                    <p class="easy_point_title mb-1"> Уборка номера</p>
-                                    <p class="easy_point_descr">Ежедневная уборка номера</p>
+                                    <p class="easy_point_title mb-1"> {!!__('main.5') !!}</p>
+                                    <p class="easy_point_descr">{!!__('main.5.5') !!}</p>
                                 </div>
                             </div>
                             <div class="d-flex pl-5"><img src="{{ asset('images/6point.png') }}" alt=""><div class="pl-3 pt-2">
-                                    <p class="easy_point_title mb-1"> Охрана</p>
-                                    <p class="easy_point_descr">Круглосуточно  охраняемая территория
+                                    <p class="easy_point_title mb-1">{!!__('main.6') !!}</p>
+                                    <p class="easy_point_descr">{!!__('main.6.6') !!}
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="easy_item d-none">
-                            <div class="easy_subtitle ">С кем планируете свой отдых?</div>
-                            <div class="row ">
-                                <div class="col-6 easy_item_in "><img src="{{ asset('images/withfriends.jpg') }}" alt=" ">
-                                    <!-- <p class="with_friends ">С друзьями</p> -->
-                                </div>
+                        {{--<div class="easy_item d-none">--}}
+                            {{--<div class="easy_subtitle ">С кем планируете свой отдых?</div>--}}
+                            {{--<div class="row ">--}}
+                                {{--<div class="col-6 easy_item_in "><img src="{{ asset('images/withfriends.jpg') }}" alt=" ">--}}
+                                    {{--<!-- <p class="with_friends ">С друзьями</p> -->--}}
+                                {{--</div>--}}
 
 
-                                <div class="col-6 easy_item_in "><img src="{{ asset('images/withfamily.jpg') }}" alt=" ">
-                                    <!-- <p class="with_family "> С семьей</p> -->
-                                </div>
-                            </div>
-                        </div>
+                                {{--<div class="col-6 easy_item_in "><img src="{{ asset('images/withfamily.jpg') }}" alt=" ">--}}
+                                    {{--<!-- <p class="with_family "> С семьей</p> -->--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                     </div>
                     <div class="col-6 easy_right ">
                         <div class="easy_right_in position-relative">
@@ -482,58 +482,58 @@
             <div class="row">
             <div class="col-lg-5 col-12 contacts_image"></div>
             <div class="col-lg-7 col-12 p-5" style="background-image: url({{ asset('images/forest.png')}}); background-size:cover; ">
-                <div class="contacts_title">Как <span><br>добраться</span><br> к нам?</div>
+                <div class="contacts_title">{!!__('main.caption8') !!}</div>
                 <div class="contacts_descr">
-                    От столицы Кыргызстана Бишкека до города <br>Каракол 430 км. Дорога проходит через <br> живописное Боомское ущелье, вдоль береговой
-                    <br>линии красивейшего озера Иссык-Куль.
+                    {!!__('main.text11') !!}
                 </div>
                 <div class="row pt-5">
                     <div class="col-lg-4 col-6">
                         <img src="{{asset('images/minibus1.svg')}}">
                         <div class="contacts_point_title font-weight-bold pb-2">
-                            Маршрутка
+                            {!!__('main.minibus') !!}
                         </div>
                         <div class="contacts_point_title">
-                            Выезд в утренние часы
-                            5-6 часов, 350 сом
+                            {!!__('main.station') !!} : <br> <a href="tel:+996 (312) 34–45–89" style="color:black;">+996 (312) 34–45–89</a>
+                        </div>
+                        <div class="contacts_point_title">
+                            {!!__('main.marshrutka') !!}
                         </div>
                     </div>
                     <div class="col-lg-4 col-6">
+                        <a href="https://taxi.yandex.kg/?lang=ru#index" style="text-decoration: none;">
                         <img class="pb-3" src="{{asset('images/taxi.svg')}}">
+
                         <div class="contacts_point_title font-weight-bold pb-2">
-                            Место в такси
+                            {!!__('main.taxi1') !!}
                         </div>
                         <div class="contacts_point_title">
-                            Выезд в утренние часы,
-                            по заполнению транспорта
-                            5-6 часов, 500-800 сом
+                            {!!__('main.taxi') !!}
                         </div>
+                        </a>
                     </div>
                     <div class="col-lg-4 col-6 pt-lg-0 pt-4">
                         <img src="{{asset('images/bus1.svg')}}">
                         <div class="contacts_point_title font-weight-bold pb-2">
-                            Ночной автобус
+                            {!!__('main.bus1') !!}
                         </div>
                         <div class="contacts_point_title">
 
-                            21:00, 22:00 и 23:00
-                            5-6 часов, 350 сом
+                            {!!__('main.bus') !!}
 
                         </div>
                     </div>
                     <div class="col-lg-6 col-6 pt-lg-4 pt-4">
                         <img class="pb-3" src="{{asset('images/car.svg')}}">
                         <div class="contacts_point_title font-weight-bold pb-2">
-                            Личный автомобиль
+                            {!!__('main.car1') !!}
                         </div>
                         <div class="contacts_point_title">
-                            Следовать по трассе А-365 и А-363 в г. Каракол ехать по ул. Фучика
-                            до шлагбаума, 5-6 часов
+                            {!!__('main.car') !!}
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 d-flex align-items-end pt-lg-0 pt-4">
                         <div class="button position-relative" style="z-index: 1">
-                        <a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>посмотреть на карте</span></a>
+                        <a href="https://2gis.kg/geo/70030076134291248/78.459883%2C42.409172?m=78.46391%2C42.41007%2F16.41"><span>{!!__('main.map') !!}</span></a>
                         </div>
                     </div>
                 </div>
@@ -542,10 +542,9 @@
             <div class="main-footer" style="background-image: url({{asset('images/footer_bg.png')}}); background-size:cover;">
                 <div class="d-flex">
                     <div>
-                <div class="footer_title position-relative">Свяжитесь<span><br>с нами</span></div>
+                <div class="footer_title position-relative">{!!__('main.caption9') !!}</div>
                 <div class="contacts_descr">
-                    По вопросам заключения договора
-                    и бронирования мест обращаться:
+                    {!!__('main.text12') !!}
                 </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -555,8 +554,7 @@
                 <div class="row pt-5">
                     <div class="col-lg-4 col-12">
                         <div class="d-flex align-items-center">
-                        <img src="{{ asset('images/pin1.svg') }}" alt=""><p class="contacts_descr" style="color: rgba(43, 43, 43, 0.7);"> Кыргызстан, Иссык-Кульская область,<br>
- г. Каракол, ущелье Кашка-Суу
+                        <img src="{{ asset('images/pin1.svg') }}" alt=""><p class="contacts_descr" style="color: rgba(43, 43, 43, 0.7);">{!!__('main.point') !!}
 </p>
                         </div>
                         <div class="d-flex align-items-center">
@@ -662,28 +660,28 @@
             <div class="form-bg">
                 <div class="form-box">
                     <div class="px-4 py-4 text-center">
-                        <h2>свяжитесь с нами</h2>
+                        <h2>{!!__('main.popup contact') !!}</h2>
                     </div>
                     <div class="form-box_item">
-                        <div class="name"><input type="text" id="contact-1" placeholder="введите имя" required></div>
+                        <div class="name"><input type="text" id="contact-1" placeholder="{!!__('main.popup contact1') !!}" required></div>
                     </div>
                     <div class="form-box_item">
-                        <div class="phone"><input type="text" id="contact-2" placeholder="введите номер телефона" required></div>
+                        <div class="phone"><input type="text" id="contact-2" placeholder="{!!__('main.popup contact2') !!}" required></div>
                     </div>
                     <div class="form-box_item">
-                        <div class="text"><textarea name="text" id="contact-3" placeholder="введите ваше сообщение" cols="30" rows="10" required></textarea></div>
+                        <div class="text"><textarea name="text" id="contact-3" placeholder="{!!__('main.popup contact3') !!}" cols="30" rows="10" required></textarea></div>
                     </div>
                     <div class="button">
-                        <button class="contact_send"><span>Отправить заявку</span></button>
+                        <button class="contact_send"><span>{!!__('main.popup contact4') !!}</span></button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="success_contact w-100 py-3 text-center text-white" style="background-color: #7feb89; display:none;">
-            Заявка успешно отправлена!
+            {!!__('main.success') !!}
         </div>
         <div class="error_contact w-100 py-3 text-center text-white bg-danger" style="display:none">
-            Произошла ошибка!
+            {!!__('main.error') !!}
         </div>
     </div>
     <div class="book-us" id="bookus">
@@ -691,48 +689,48 @@
             <div class="form-bg">
                 <div class="form-box">
                     <div class="py-4 px-4 text-center">
-                    <h2>Забронируйте <br> коттедж</h2>
+                    <h2>{!!__('main.popup book') !!}</h2>
                     </div>
                     <div class="row form-box_wrap">
                         <div class="col-12 form-box_in">
                             <div class="form-box_item">
-                                <div class="name"><input type="text" id="book_1" placeholder="ваше имя" required></div>
+                                <div class="name"><input type="text" id="book_1" placeholder="{!!__('main.popup book1') !!}" required></div>
                             </div>
                             <select class="selectpicker" id="book_4">
-                                <option value="{{null}}">тип коттеджа</option>
-                                <option>«Эконом»</option>
-                                <option>«Малика»</option>
-                                <option>«Дипломат»</option>
-                                <option>«Амбассадор»</option>
+                                <option value="{{null}}">{!!__('main.popup book2') !!}</option>
+                                <option>«{!!__('main.economy') !!}»</option>
+                                <option>«{!!__('main.malika') !!}»</option>
+                                <option>«{!!__('main.diplomat') !!}»</option>
+                                <option>«{!!__('main.ambassador') !!}»</option>
                                 <option>«VIP»</option>
                             </select>
                         </div>
                         <div class="col-6 form-box_in">
                             <div class="form-box_item">
-                                <div class="name"><input class="date" type="text" id="book_5" placeholder="дата заезда"></div>
+                                <div class="name"><input class="date" type="text" id="book_5" placeholder="{!!__('main.popup book3') !!}"></div>
                             </div>
                         </div>
                         <div class="col-6 form-box_in">
                             <div class="form-box_item">
-                                <div class="phone"><input class="date" type="text" id="book_6" placeholder="дата выезда"></div>
+                                <div class="phone"><input class="date" type="text" id="book_6" placeholder="{!!__('main.popup book4') !!}"></div>
                             </div>
                         </div>
                         <div class="col-12 form-box_in">
                             <div class="form-box_item">
-                                <div class="phone"><input type="text" id="book_2" placeholder="номер телефона" required></div>
+                                <div class="phone"><input type="text" id="book_2" placeholder="{!!__('main.popup book5') !!}" required></div>
                             </div>
                         </div>
                     </div>
                     <div class="button mb-4">
-                        <button class="book_send"><span>Отправить заявку</span></button>
+                        <button class="book_send"><span>{!!__('main.popup book6') !!}</span></button>
                     </div>
                 </div>
             </div>
             <div class="success_book w-100 py-3 text-center text-white" style="background-color: #7feb89; display:none;">
-                Заявка успешно отправлена!
+                {!!__('main.success') !!}
             </div>
             <div class="error_book w-100 py-3 text-center text-white bg-danger" style="display:none">
-                Произошла ошибка!
+                {!!__('main.error') !!}
             </div>
         </div>
     </div>

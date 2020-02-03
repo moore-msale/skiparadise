@@ -60,6 +60,10 @@
   font-family: "Raleway";
   src: url(../fonts/Raleway-Regular.ttf);
 }
+@font-face {
+  font-family: "Dirty Headline Cyrillic";
+  src: url(../fonts/DirtyHeadlineCyrillic.ttf);
+}
 
 body {
   margin: 0 auto;
@@ -933,7 +937,7 @@ body {
 .funny_title {
   font-family: "Ubuntu";
   font-weight: bold;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 100%;
   text-transform: uppercase;
   color: #3f3f3f;
@@ -985,6 +989,18 @@ body {
   }
 }
 
+.funny_descr2
+{
+  font-family: "Dirty Headline Cyrillic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 150%;
+  /* or 48px */
+  text-transform: uppercase;
+
+  color: #3F3F3F;
+}
 .funny_descr {
   font-family: "Ubuntu";
   font-weight: normal;

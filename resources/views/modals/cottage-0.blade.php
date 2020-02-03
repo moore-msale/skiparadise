@@ -11,13 +11,13 @@
                     <span aria-hidden="true" class="white-text">&times;</span>
                 </button>
                 <div class="px-lg-4 px-0">
-                    <span class="cottage_menu_title mr-3">коттедж</span>
-                    <span class="cottage_menu_name">Эконом</span>
+                    <span class="cottage_menu_title mr-3">{!!__('main.cottage') !!}</span>
+                    <span class="cottage_menu_name">{!!__('main.economy') !!}</span>
                     {{--<p class="cottage_menu_link mt-3" >--}}
                         {{--включает в себя 2 спальные комнаты, гостиную, 1 санузел, кухню.--}}
                     {{--</p>--}}
                     <p class="cottage_menu_title mt-2 text-lowercase">
-                        Прайс лист:
+                        {!!__('main.popup cottage') !!}:
                     </p>
                     <div class="container-fluid mt-4">
                         <div class="row">
@@ -52,16 +52,10 @@
                         </div>
                         <div class="row">
                             <p class="font-weight-bold mb-0">
-                                В стоимость проживания входит:
+                                {!!__('main.popup cottage1') !!}:
                             </p>
                             <span>
-                                    •	Завтрак, ассортиментный перечень блюд для обслуживания Гостей по системе «Шведский стол»<br>
-•	трансфер от коттеджного городка “Ski Paradise Karakol” до кассы ski-pass гор.базы «Каракол»;<br>
-•	парковка автомобиля;<br>
-•	Wi-Fi;<br>
-•	Цифровое телевидение;<br>
-•	Ежедневная уборка номера;<br>
-•	Круглосуточно охраняемая территория. <br>
+                                  {!!__('main.popup cottage2') !!}
 
                                 </span>
                         </div>
