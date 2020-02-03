@@ -487,17 +487,21 @@
                     {!!__('main.text11') !!}
                 </div>
                 <div class="row pt-5">
+
                     <div class="col-lg-4 col-6">
+                        <a style="text-decoration: none;" href="{{ asset('images/sprinter.jpg') }}" data-fancybox="sprinter">
                         <img src="{{asset('images/minibus1.svg')}}">
                         <div class="contacts_point_title font-weight-bold pb-2">
                             {!!__('main.minibus') !!}
                         </div>
+                        </a>
                         <div class="contacts_point_title">
-                            {!!__('main.station') !!} : <br> <a href="tel:+996 (312) 34–45–89" style="color:black;">+996 (312) 34–45–89</a>
+                            {!! __('main.tel') !!}<a style="color:black;" href="tel:+9960703887700"> 0703887700</a>
                         </div>
                         <div class="contacts_point_title">
                             {!!__('main.marshrutka') !!}
                         </div>
+
                     </div>
                     <div class="col-lg-4 col-6">
                         <a href="https://taxi.yandex.kg/?lang=ru#index" style="text-decoration: none;">
@@ -515,6 +519,9 @@
                         <img src="{{asset('images/bus1.svg')}}">
                         <div class="contacts_point_title font-weight-bold pb-2">
                             {!!__('main.bus1') !!}
+                        </div>
+                        <div class="contacts_point_title">
+                            {!!__('main.station') !!} : <br> <a href="tel:+996 (312) 34–45–89" style="color:black;">+996 (312) 34–45–89</a>
                         </div>
                         <div class="contacts_point_title">
 

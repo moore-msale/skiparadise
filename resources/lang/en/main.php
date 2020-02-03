@@ -116,6 +116,7 @@ Karakol city, Kashka-Suu gorge',
     'success' => '
 Application sent successfully!',
     'error' => 'An error has occurred!',
+    'tel' => 'call:',
 ];
 
 
