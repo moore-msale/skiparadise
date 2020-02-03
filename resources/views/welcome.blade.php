@@ -305,7 +305,7 @@
                         </p>
                         <div class="d-lg-block d-flex">
                         <div class="button position-relative" style="z-index:1; max-width:150px;">
-                            <a href="{{asset('images/attribute_price_list.png')}}" data-fancybox="attribute"><span>{!!__('main.see price lsit') !!}</span></a>
+                            <a href="{{asset('images/attribute_price_list.png')}}" data-fancybox="attribute"><span>{!!__('main.see price list') !!}</span></a>
                         </div>
                             <div class="button position-relative mt-lg-3 mt-0" style="z-index:1; max-width:150px;">
                                 <a href="{{asset('images/rent/1.jpg')}}" data-fancybox="rent"><span>{!!__('main.gallery2') !!}</span></a>
