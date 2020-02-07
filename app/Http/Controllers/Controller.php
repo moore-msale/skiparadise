@@ -16,6 +16,6 @@ class Controller extends BaseController
     public function index()
     {
 
-        return view('block',['check' => session()->flash('status', 'Task was successful!')]);
+        return view('welcome',['check' => session()->flash('status', 'Task was successful!')]);
     }
 }
