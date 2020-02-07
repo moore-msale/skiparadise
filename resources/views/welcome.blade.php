@@ -283,7 +283,7 @@
 
                 </div>
                 <div class="col-lg-6 col-12 d-lg-block d-none" style="padding-top:130px;">
-                    <img class="w-100" src="{{ asset('images/restaurant.png') }}" alt="">
+                    <img class="w-100" style="opacity:0.7; filter:blur(0.5px)" src="{{ asset('images/restaurant.png') }}" alt="">
                 </div>
             </div>
         </div>
@@ -305,7 +305,7 @@
                         </p>
                         <div class="d-lg-block d-flex">
                         <div class="button position-relative" style="z-index:1; max-width:150px;">
-                            <a href="{{asset('images/attribute_price_list.png')}}" data-fancybox="attribute"><span>{!!__('main.see price list') !!}</span></a>
+                            <a href="{{asset('images/attribute_price_list.jpg')}}" data-fancybox="attribute"><span>{!!__('main.see price list') !!}</span></a>
                         </div>
                             <div class="button position-relative mt-lg-3 mt-0" style="z-index:1; max-width:150px;">
                                 <a href="{{asset('images/rent/1.jpg')}}" data-fancybox="rent"><span>{!!__('main.gallery2') !!}</span></a>
